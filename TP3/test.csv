@@ -1,0 +1,501 @@
+id,sparql,english
+0,select distinct ?uri where { dbr:Marine_Corps_Air_Station_Kaneohe_Bay dbp:architect ?uri . dbr:New_Sanno_Hotel dbo:tenant ?uri },what is the dbp:architect of the dbr:Marine_Corps_Air_Station_Kaneohe_Bay and dbo:tenant of the dbr:New_Sanno_Hotel ?
+1,select distinct ?uri where { dbr:Google_Videos dbp:developer ?uri . dbr:Google_Web_Toolkit dbo:author ?uri },what is the dbp:developer of the dbr:Google_Videos and dbo:author of the dbr:Google_Web_Toolkit ?
+2,ask where { dbr:Peter_Piper_Pizza dbo:industry dbr:Pizza },is dbr:Pizza the dbo:industry of dbr:Peter_Piper_Pizza ?
+3,select distinct ?uri where { ?uri dbp:deputy dbr:Neil_Brown_(Australian_politician) . ?uri dbp:deputy dbr:Andrew_Peacock . ?uri rdf:type dbo:OfficeHolder },what is the dbo:OfficeHolder whose dbp:deputy are dbr:Neil_Brown_(Australian_politician) and dbr:Andrew_Peacock ?
+4,select distinct ?uri where { ?uri dbp:producer dbr:Stephen_E._Ambrose . ?uri dbp:writer dbr:Erik_Jendresen . ?uri rdf:type dbo:TelevisionShow },what is the dbo:TelevisionShow whose dbp:producer is dbr:Stephen_E._Ambrose and dbp:writer is dbr:Erik_Jendresen ?
+5,select distinct ?uri where { dbr:War_Of_Attrition_(horse) dbp:race ?uri . dbr:Fergie_Sutherland dbp:race ?uri . },what is the dbp:race of the dbr:War_Of_Attrition_(horse) and dbr:Fergie_Sutherland ?
+6,select distinct count ( ?uri ) where { ?x dbp:battles dbr:World_War_II . ?x dbp:battles ?uri },how many other dbp:battles are there of the military people whose dbp:battles is dbr:World_War_II ?
+7,ask where { dbr:William_H._Blanchard dbp:placeofburial dbr:Colorado },is dbr:Colorado the dbp:placeofburial of dbr:William_H._Blanchard ?
+8,select distinct ?uri where { dbr:Channel_District dbo:state ?uri },what is the dbo:state of dbr:Channel_District ?
+9,select distinct count ( ?uri ) where { ?x dbo:tenant dbr:Raptors_905 . ?x dbo:tenant ?uri },what is the total number of other dbo:tenant of the stadia whose dbo:tenant is dbr:Raptors_905 ?
+10,select distinct ?uri where { ?x dbp:operator dbr:Massachusetts_Department_of_Transportation . ?x dbp:owner ?uri . ?x rdf:type dbo:RoadTunnel },what is the dbp:owner of the dbo:RoadTunnel whose dbp:operator is dbr:Massachusetts_Department_of_Transportation ?
+11,select distinct ?uri where { ?x dbo:vicePresident dbr:Enrique_José_Varona . ?x dbo:almaMater ?uri . },what is the dbo:almaMater of the owl whose dbo:vicePresident is dbr:Enrique_José_Varona ?
+12,select distinct ?uri where { ?x dbo:species dbr:Vitis_vinifera . ?x dbo:origin ?uri . ?x rdf:type dbo:Grape },what is the dbo:origin of the dbo:Grape whose dbo:species is dbr:Vitis_vinifera ?
+13,select distinct ?uri where { dbr:William_French_Smith dbo:militaryBranch ?uri . dbr:Pierre_R._Graham dbp:branch ?uri },what is the dbo:militaryBranch of the dbr:William_French_Smith and dbp:branch of the dbr:Pierre_R._Graham ?
+14,select distinct ?uri where { dbr:Denver_Broncos dbo:locationCity ?uri . dbr:Steven_Clark_Cunningham dbo:birthPlace ?uri },what is the dbo:locationCity of the dbr:Denver_Broncos and dbo:birthPlace of the dbr:Steven_Clark_Cunningham ?
+15,select distinct ?uri where { ?uri dbp:managerclubs dbr:England_national_under-20_football_team . ?uri dbp:managerclubs dbr:England_national_under-21_football_team . },whose dbp:managerclubs are dbr:England_national_under-20_football_team and dbr:England_national_under-21_football_team ?
+16,ask where { dbr:Blue_Lagoon_Island dbo:archipelago dbr:The_Bahamas },is dbr:The_Bahamas the dbo:archipelago of dbr:Blue_Lagoon_Island ?
+17,ask where { dbr:New_Way_(Israel) dbo:mergedIntoParty dbr:One_Israel },is dbr:One_Israel the dbo:mergedIntoParty of dbr:New_Way_(Israel) ?
+18,select distinct ?uri where { ?x dbo:race dbr:Dubai_World_Cup . ?x dbp:birthPlace ?uri . ?x rdf:type dbo:Jockey },list the dbp:birthPlace of the dbo:Jockey whose dbo:race is dbr:Dubai_World_Cup ?
+19,select distinct ?uri where { ?x dbp:headquarters dbr:United_Kingdom . ?x dbp:destinations ?uri . ?x rdf:type dbo:Airline },what is the dbp:destinations of the dbo:Airline whose dbp:headquarters is dbr:United_Kingdom ?
+20,ask where { dbr:USS_Marmora_(IX-189) dbp:shipBuilder dbr:Seattle },is dbr:Seattle the dbp:shipBuilder of dbr:USS_Marmora_(IX-189) ?
+21,select distinct ?uri where { dbr:Barq's dbo:related ?x . ?x dbp:locationCity ?uri . },what is the dbp:locationCity of the beverage which is the dbo:related of dbr:Barq's ?
+22,select distinct count ( ?uri ) where { ?x dbo:campus dbr:Suburb . ?uri dbp:education ?x . },how many people are there whose dbp:education 's dbo:campus is dbr:Suburb ?
+23,select distinct ?uri where { ?x dbo:successor dbr:Dragimir_of_Travunia_and_Zachlumia . ?x dbp:majorShrine ?uri . ?x rdf:type dbo:Monarch },what is the dbp:majorShrine of the dbo:Monarch whose dbo:successor is dbr:Dragimir_of_Travunia_and_Zachlumia ?
+24,select distinct ?uri where { ?uri dbp:mouthLocation dbr:Arctic_Ocean . ?uri dbp:mouthLocation dbr:Laptev_Sea . ?uri rdf:type dbo:River },what is the dbo:River whose dbp:mouthLocation are dbr:Arctic_Ocean and dbr:Laptev_Sea ?
+25,select distinct ?uri where { ?x dbp:placeOfDeath dbr:Bryn_Mawr_Hospital . ?x dbp:placeOfBirth ?uri . },what is the dbp:placeOfBirth of the cleric whose dbp:placeOfDeath is dbr:Bryn_Mawr_Hospital ?
+26,select distinct ?uri where { ?x dbp:role dbr:Air_interdiction . ?uri dbo:militaryUnit ?x . },what are the military people whose dbo:militaryUnit 's dbp:role is dbr:Air_interdiction ?
+27,ask where { dbr:Ombla dbo:sourceMountain dbr:Croatia },is dbr:Croatia the dbo:sourceMountain of dbr:Ombla ?
+28,select distinct ?uri where { dbr:Edwin_Adams_(politician) dbp:placeOfDeath ?uri . dbr:William_A._Purtell dbo:birthPlace ?uri . },what is the dbp:placeOfDeath of the dbr:Edwin_Adams_(politician) and dbo:birthPlace of the dbr:William_A._Purtell ?
+29,select distinct ?uri where { dbr:RENFE_Class_333 dbo:designer ?uri . dbr:Renaissance_Center dbp:owner ?uri },what is the dbo:designer of the dbr:RENFE_Class_333 and dbp:owner of the dbr:Renaissance_Center ?
+30,select distinct count ( ?uri ) where { ?x dbo:notableWork dbr:Novelas_ejemplares . ?uri dbo:author ?x . ?uri rdf:type dbo:Book },what is the total number of dbo:Book whose dbo:author 's dbo:notableWork is dbr:Novelas_ejemplares ?
+31,select distinct ?uri where { ?x dbo:foundationPlace dbr:Taiwan . ?x dbo:division ?uri . ?x rdf:type dbo:Company },what is the dbo:division of the dbo:Company whose dbo:foundationPlace is dbr:Taiwan ?
+32,select distinct ?uri where { dbr:Stanford_Cardinal dbo:university ?uri . dbr:Gerald_Reaven dbo:institution ?uri },what is the dbo:university of the dbr:Stanford_Cardinal and dbo:institution of the dbr:Gerald_Reaven ?
+33,select distinct ?uri where { dbr:Deion_Sanders dbp:debutteam ?uri },what is the dbp:debutteam of dbr:Deion_Sanders ?
+34,select distinct ?uri where { dbr:Batman_Live dbp:characters ?uri },who are the dbp:characters of dbr:Batman_Live ?
+35,select distinct ?uri where { dbr:Ford_Kansas_City_Assembly_Plant dbo:owningOrganisation ?uri . dbr:Ford_Y-block_engine dbo:manufacturer ?uri },what is the dbo:owningOrganisation of the dbr:Ford_Kansas_City_Assembly_Plant and dbo:manufacturer of the dbr:Ford_Y-block_engine ?
+36,select distinct ?uri where { dbr:A._Peter_Dewey dbo:award ?uri },what are the dbo:award of dbr:A._Peter_Dewey ?
+37,select distinct ?uri where { ?uri dbo:developer dbr:John_Fanning_(businessman) },what is the software whose dbo:developer is dbr:John_Fanning_(businessman) ?
+38,select distinct ?uri where { ?x dbo:recordLabel dbr:Motown . ?x dbp:associatedActs ?uri . ?x rdf:type dbo:Band },what is the dbp:associatedActs of the dbo:Band whose dbo:recordLabel is dbr:Motown ?
+39,"select distinct count ( ?uri ) where { ?uri dbo:garrison dbr:Arlington_County,_Virginia . ?uri rdf:type dbo:MilitaryUnit }","give me a count of dbo:MilitaryUnit whose dbo:garrison is dbr:Arlington_County,_Virginia ?"
+40,select distinct ?uri where { ?uri dbp:relatives dbr:Kelly_Osbourne . ?uri dbp:relatives dbr:Ozzy_Osbourne . },who is the person whose dbp:relatives are dbr:Kelly_Osbourne and dbr:Ozzy_Osbourne ?
+41,select distinct ?uri where { dbr:Daund_Junction_railway_station dbo:servingRailwayLine ?uri . dbr:99_(2009_film) dbp:recorded ?uri },what is the dbo:servingRailwayLine of the dbr:Daund_Junction_railway_station and dbp:recorded of the dbr:99_(2009_film) ?
+42,select distinct ?uri where { ?x dbo:subsidiary dbr:Viacom_Productions . ?uri dbp:company ?x . ?uri rdf:type dbo:TelevisionShow },what are the dbo:TelevisionShow whose dbp:company 's dbo:subsidiary is dbr:Viacom_Productions ?
+43,select distinct ?uri where { ?uri dbo:campus dbr:Mount_Moosilauke . ?uri rdf:type dbo:University },what is the dbo:University whose dbo:campus is dbr:Mount_Moosilauke ?
+44,select distinct count ( ?uri ) where { ?uri dbp:programmingLanguage dbr:C++ . },give me a count of companies whose dbp:programmingLanguage is dbr:C++ ?
+45,select distinct ?uri where { dbr:Steve_Holland_(footballer) dbp:currentclub ?x . ?x dbp:owner ?uri . },what is the dbp:owner of the soccer club which is the dbp:currentclub of dbr:Steve_Holland_(footballer) ?
+46,ask where { dbr:Don't_Bring_Me_Down dbp:recorded dbr:West_Germany },is dbr:West_Germany the dbp:recorded of dbr:Don't_Bring_Me_Down ?
+47,select distinct count ( ?uri ) where { dbr:Boonchu_Rojanastien dbp:party ?x . ?x dbo:ideology ?uri . ?x rdf:type dbo:PoliticalParty },how many dbo:ideology are there of the dbo:PoliticalParty which is the dbo:PoliticalParty of dbr:Boonchu_Rojanastien ?
+48,select distinct ?uri where { ?uri dbp:music dbr:Geoffrey_Burgon . ?uri dbp:distributor dbr:Cinema_International_Corporation . ?uri rdf:type dbo:Film },what is the dbo:Film whose dbp:music is dbr:Geoffrey_Burgon and dbp:distributor is dbr:Cinema_International_Corporation ?
+49,select distinct ?uri where { ?uri dbp:keyPeople dbr:Dennis_Muilenburg . ?uri dbp:products dbr:Boeing_CH-47_Chinook . ?uri rdf:type dbo:Company },what is the dbo:Company whose dbp:keyPeople is dbr:Dennis_Muilenburg and dbp:products is dbr:Boeing_CH-47_Chinook ?
+50,select distinct ?uri where { dbr:One_Day_at_a_Time_(Em's_Version) dbo:subsequentWork ?x . ?x dbo:writer ?uri . },what is the dbo:writer of the single which is the dbo:subsequentWork of dbr:One_Day_at_a_Time_(Em's_Version) ?
+51,select distinct ?uri where { ?x dbp:animator dbr:Hardie_Gramatky . ?uri dbo:voice ?x . ?uri rdf:type dbo:FictionalCharacter },what is the dbo:FictionalCharacter whose dbo:voice 's dbp:animator is dbr:Hardie_Gramatky ?
+52,select distinct ?uri where { ?x dbp:architect dbr:Louis_D._Astorino . ?x dbp:architect ?uri . },what are the other dbp:architect of the stadia whose dbp:architect is dbr:Louis_D._Astorino ?
+53,select distinct ?uri where { dbr:Blodpalt dbo:ingredient ?uri . dbr:Kaszanka dbo:ingredient ?uri . },what is the dbo:ingredient of the dbr:Blodpalt and dbr:Kaszanka ?
+54,select distinct count ( ?uri ) where { dbr:Ganges dbp:city ?x . ?x dbo:leaderName ?uri . },how many dbo:leaderName are there of the city which is the dbp:city of dbr:Ganges ?
+55,select distinct ?uri where { dbr:Marine_Corps_Air_Station_Kaneohe_Bay dbp:architect ?uri . dbr:Burnet_R._Maybank dbp:branch ?uri },what is the dbp:architect of the dbr:Marine_Corps_Air_Station_Kaneohe_Bay and dbp:branch of the dbr:Burnet_R._Maybank ?
+56,select distinct count ( ?uri ) where { ?x dbo:genre dbr:Fantasy_television . ?uri dbo:related ?x . ?uri rdf:type dbo:TelevisionShow },what is the total number of dbo:TelevisionShow whose dbo:related 's dbo:genre is dbr:Fantasy_television ?
+57,select distinct count ( ?uri ) where { ?x dbo:composer dbr:Gerard_Marino . ?x dbo:developer ?uri . },"how many dbo:developer are there , of the video games whose dbo:composer is dbr:Gerard_Marino ?"
+58,select distinct ?uri where { ?uri dbp:developer dbr:Brian_Graden . ?uri dbp:voices dbr:Isaac_Hayes . ?uri rdf:type dbo:TelevisionShow },what is the dbo:TelevisionShow whose dbp:developer is dbr:Brian_Graden and dbp:voices is dbr:Isaac_Hayes ?
+59,ask where { dbr:Ontario_International_Airport dbp:cityServed dbr:Inland_Empire },is dbr:Inland_Empire the dbp:cityServed of dbr:Ontario_International_Airport ?
+60,select distinct ?uri where { dbr:Angels_Toruń dbo:homeStadium ?x . ?x dbp:nickname ?uri . },what is the dbp:nickname of the owl which is the dbo:homeStadium of dbr:Angels_Toruń ?
+61,select distinct ?uri where { dbr:Jared_Kushner dbo:relation ?x . ?x dbo:relation ?uri . },what is the dbo:relation of the person who is the dbo:relation of dbr:Jared_Kushner ?
+62,select distinct ?uri where { ?x dbo:previousWork dbr:Blade_Runner_2:_The_Edge_of_Human . ?x dbo:series ?uri . },what is the dbo:series of the book whose dbo:previousWork is dbr:Blade_Runner_2:_The_Edge_of_Human ?
+63,select distinct ?uri where { dbr:Sino-French_War dbo:territory ?uri },what is the dbo:territory of dbr:Sino-French_War ?
+64,select distinct ?uri where { dbr:Jawaharlal_Nehru dbo:child ?x . ?x dbo:party ?uri . },what is the dbo:party of the office holder who is the dbo:child of dbr:Jawaharlal_Nehru ?
+65,select distinct ?uri where { ?uri dbp:purpose dbr:Environmentalism . ?uri dbp:purpose dbr:Peace . ?uri rdf:type dbo:Organisation },what is the dbo:Organisation whose dbp:purpose are dbr:Environmentalism and dbr:Peace ?
+66,select distinct count ( ?uri ) where { ?x dbp:awards dbr:Timeform . ?x dbo:owner ?uri . ?uri rdf:type dbo:Person },count the dbo:owner of the race horses whose dbp:awards is dbr:Timeform ?
+67,select distinct ?uri where { ?x dbp:founder dbr:Guggenheim_family . ?uri dbp:owner ?x . ?uri rdf:type dbo:BaseballTeam },what are the dbo:BaseballTeam whose dbp:owner 's dbp:founder is dbr:Guggenheim_family ?
+68,select distinct ?uri where { ?x dbp:workInstitutions dbr:Western_Pennsylvania_Hospital . ?x dbo:knownFor ?uri . ?x rdf:type dbo:Person },what is the dbo:knownFor of the dbo:Person whose dbp:workInstitutions is dbr:Western_Pennsylvania_Hospital ?
+69,select distinct ?uri where { dbr:1967_Mexican_Grand_Prix dbp:firstTeam ?uri . dbr:Dagenham_wind_turbines dbp:owner ?uri },what is the dbp:firstTeam of the dbr:1967_Mexican_Grand_Prix and dbp:owner of the dbr:Dagenham_wind_turbines ?
+70,select distinct ?uri where { ?x dbo:city dbr:Kharghar . ?x dbo:sport ?uri . ?x rdf:type dbo:School },what is the dbo:sport of the dbo:School whose dbo:city is dbr:Kharghar ?
+71,"ask where { dbr:United_States_House_of_Representatives_elections_in_Ohio,_2010 dbp:incumbent dbr:John_Boehner }","is dbr:John_Boehner the dbp:incumbent of dbr:United_States_House_of_Representatives_elections_in_Ohio,_2010 ?"
+72,select distinct count ( ?uri ) where { ?x dbo:publisher dbr:Doubleday_(publisher) . ?x dbo:nonFictionSubject ?uri . },"how many dbo:nonFictionSubject of the books whose dbo:publisher is dbr:Doubleday_(publisher) , are there ?"
+73,select distinct ?uri where { ?x dbo:residence dbr:Martha's_Vineyard . ?x dbo:hometown ?uri . },what is the dbo:hometown of the office holder whose dbo:residence is dbr:Martha's_Vineyard ?
+74,select distinct ?uri where { dbr:2006–07_Middlesbrough_F.C._season dbo:manager ?uri },who is the dbo:manager of dbr:2006–07_Middlesbrough_F.C._season ?
+75,select distinct ?uri where { dbr:Bloomberg_Radio dbo:owner ?x . ?x dbp:owner ?uri . ?x rdf:type dbo:Bank },what is the dbp:owner of the dbo:Bank which is the dbo:owner of dbr:Bloomberg_Radio ?
+76,select distinct ?uri where { dbr:2012–13_Marquette_Golden_Eagles_men's_basketball_team dbo:coach ?uri },who is the dbo:coach of dbr:2012–13_Marquette_Golden_Eagles_men's_basketball_team ?
+77,select distinct ?uri where { dbr:Winston_Bryant dbp:governor ?uri . dbr:Carl_Stokes dbp:president ?uri },what is the dbp:governor of the dbr:Winston_Bryant and dbp:president of the dbr:Carl_Stokes ?
+78,select distinct ?uri where { ?x dbp:coach dbr:Justine_Omojong . ?x dbp:homeStadium ?uri . ?x rdf:type dbo:SoccerClub },what is the dbp:homeStadium of the dbo:SoccerClub whose dbp:coach is dbr:Justine_Omojong ?
+79,select distinct ?uri where { ?uri dbo:parent dbr:Ptolemy_XII_Auletes . ?uri dbp:spouse dbr:Ptolemy_XIII_Theos_Philopator . ?uri rdf:type dbo:Royalty },what is the dbo:Royalty whose dbo:parent is dbr:Ptolemy_XII_Auletes and dbp:spouse is dbr:Ptolemy_XIII_Theos_Philopator ?
+80,"select distinct ?uri where { ?x dbo:campus dbr:Woodlane,_New_Jersey . ?x dbp:chancellor ?uri . ?x rdf:type dbo:University }","what is the dbp:chancellor of the dbo:University whose dbo:campus is dbr:Woodlane,_New_Jersey ?"
+81,select distinct ?uri where { dbr:Blodpalt dbo:ingredient ?uri },what is the dbo:ingredient of dbr:Blodpalt ?
+82,select distinct ?uri where { ?x dbo:type dbr:Trade_association . ?x dbo:regionServed ?uri . ?x rdf:type dbo:Organisation },list the dbo:regionServed of the dbo:Organisation which are dbo:type ?
+83,select distinct ?uri where { dbr:Tonight's_the_Night_(2003_musical) dbp:music ?uri },who is the dbp:music of dbr:Tonight's_the_Night_(2003_musical) ?
+84,select distinct ?uri where { ?x dbp:trainer dbr:Bert_S._Michell . ?x dbo:honours ?uri . ?x rdf:type dbo:RaceHorse },what is the dbo:honours of the dbo:RaceHorse whose dbp:trainer is dbr:Bert_S._Michell ?
+85,select distinct ?uri where { dbr:Viveka_Babajee dbp:citizenship ?uri . dbr:Ronny_Vencatachellum dbo:nationality ?uri },what is the dbp:citizenship of the dbr:Viveka_Babajee and dbp:citizenship of the dbr:Ronny_Vencatachellum ?
+86,select distinct ?uri where { ?x dbp:leader dbr:Y._S._Rajasekhara_Reddy . ?x dbo:affiliation ?uri . ?x rdf:type dbo:Election },what is the dbo:affiliation of the dbo:Election whose dbp:leader is dbr:Y._S._Rajasekhara_Reddy ?
+87,select distinct ?uri where { ?x dbp:notableCommanders dbr:Paul_Hausser . ?x dbp:notableCommanders ?uri . },what are the other dbp:notableCommanders of the owls whose dbp:notableCommanders is dbr:Paul_Hausser ?
+88,ask where { dbr:Fa'a'ā_International_Airport dbp:cityServed dbr:Tahiti },is dbr:Tahiti the dbp:cityServed of dbr:Fa'a'ā_International_Airport ?
+89,select distinct ?uri where { dbr:Lennon_Legend:_The_Very_Best_of_John_Lennon_(DVD) dbo:director ?uri },who is the dbo:director of dbr:Lennon_Legend:_The_Very_Best_of_John_Lennon_(DVD) ?
+90,select distinct ?uri where { dbr:Svetlana_Navasardyan dbp:origin ?uri },what is the dbp:origin of dbr:Svetlana_Navasardyan ?
+91,select distinct ?uri where { dbr:Chelsea_F.C. dbp:owner ?uri },who is the dbp:owner of dbr:Chelsea_F.C. ?
+92,select distinct count ( ?uri ) where { ?x dbo:hometown dbr:Volos . ?uri dbp:music ?x . ?uri rdf:type dbo:Film },how many dbo:Film are there whose dbp:music 's dbo:hometown is dbr:Volos ?
+93,"select distinct ?uri where { ?uri dbp:relatives dbr:Huey,_Dewey,_and_Louie . ?uri dbo:species dbr:American_Pekin_duck . ?uri rdf:type dbo:FictionalCharacter }","what is the dbo:FictionalCharacter whose dbp:relatives is dbr:Huey,_Dewey,_and_Louie and dbo:species is dbr:American_Pekin_duck ?"
+94,select distinct ?uri where { dbr:Sierra_del_Merendón dbo:country ?uri . },what is the dbo:country of dbr:Sierra_del_Merendón ?
+95,select distinct ?uri where { dbr:Vanderbilt_Commodores dbo:university ?uri },what is the dbo:university of dbr:Vanderbilt_Commodores ?
+96,select distinct ?uri where { ?uri dbp:label dbr:Colpix_Records . ?uri rdf:type dbo:MusicalArtist },who are the dbo:MusicalArtist whose dbp:label is dbr:Colpix_Records ?
+97,select distinct ?uri where { ?x dbo:capital dbr:Podgorica . ?x dbp:currency ?uri . },what is the dbp:currency of the owls whose dbo:capital is dbr:Podgorica ?
+98,select distinct ?uri where { dbr:William_Anthony_(artist) dbo:training ?uri },what is the dbo:training of dbr:William_Anthony_(artist) ?
+99,select distinct ?uri where { ?uri dbp:sourceLocation dbr:Dowra . ?uri rdf:type dbo:River },what is the dbo:River whose dbp:sourceLocation is dbr:Dowra ?
+100,select distinct count ( ?uri ) where { ?x dbo:keyPerson dbr:Steve_Burke_(businessman) . ?uri dbo:network ?x . },what is the total number of television shows whose dbo:network 's dbo:keyPerson is dbr:Steve_Burke_(businessman) ?
+101,select distinct ?uri where { ?x dbp:almaMater dbr:Yokohama_National_University . ?x dbo:religion ?uri . ?x rdf:type dbo:Politician },what is the dbo:religion of the dbo:Politician whose dbp:almaMater is dbr:Yokohama_National_University ?
+102,select distinct ?uri where { ?x dbo:language dbr:Swahili_language . ?x dbo:sport ?uri . },what is the dbo:sport of the schools whose dbo:language is dbr:Swahili_language ?
+103,select distinct count ( ?uri ) where { ?x dbo:languageFamily dbr:Anglo-Frisian_languages . ?uri dbp:languages ?x . ?uri rdf:type dbo:EthnicGroup },give the total number of dbo:EthnicGroup whose dbp:languages 's dbo:languageFamily is dbr:Anglo-Frisian_languages ?
+104,select distinct ?uri where { ?uri dbp:neighboringMunicipalities dbr:Cologny . ?uri dbp:neighboringMunicipalities dbr:Lancy . ?uri rdf:type dbo:Place },what is the dbo:Place whose dbp:neighboringMunicipalities are dbr:Cologny and dbr:Lancy ?
+105,select distinct ?uri where { dbr:VP-8 dbo:commandStructure ?uri . dbr:VP-10 dbo:commandStructure ?uri . },what is the dbo:commandStructure of the dbr:VP-8 and dbr:VP-10 ?
+106,select distinct count ( ?uri ) where { ?x dbp:membership dbr:Azerbaijan . ?x dbp:membership ?uri },give me the total number of dbp:membership of the organisations whose dbp:membership is dbr:Azerbaijan ?
+107,select distinct ?uri where { ?uri dbo:series dbr:Spy_Kids_(franchise) . },who is the fictional character whose dbo:series is dbr:Spy_Kids_(franchise) ?
+108,select distinct ?uri where { dbr:Victoria_(ship) dbo:owner ?uri },who is the dbo:owner of dbr:Victoria_(ship) ?
+109,select distinct ?uri where { dbr:Ted_Williams_Tunnel dbp:owner ?uri . dbr:Leonard_P._Zakim_Bunker_Hill_Memorial_Bridge dbp:owner ?uri . },what is the dbp:owner of the dbr:Ted_Williams_Tunnel and dbr:Leonard_P._Zakim_Bunker_Hill_Memorial_Bridge ?
+110,select distinct count ( ?uri ) where { ?uri dbp:nationalteam dbr:Spain_national_football_team . ?uri rdf:type dbo:SoccerManager },give me a count of dbo:SoccerManager whose dbp:nationalteam is dbr:Spain_national_football_team ?
+111,select distinct ?uri where { ?x dbp:governingBody dbr:Dallas . ?uri dbo:foundationPlace ?x . ?uri rdf:type dbo:Company },what are the dbo:Company whose dbo:foundationPlace 's dbp:governingBody is dbr:Dallas ?
+112,select distinct ?uri where { dbr:New_Zealand_Chess_Federation dbp:purpose ?uri },what is the dbp:purpose of dbr:New_Zealand_Chess_Federation ?
+113,select distinct ?uri where { dbr:Twin_Cities_400 dbo:operatedBy ?uri },what is the dbo:operatedBy of dbr:Twin_Cities_400 ?
+114,select distinct count ( ?uri ) where { ?uri dbp:placeOfBurial dbr:Rome . ?uri rdf:type dbo:Royalty },give me a count of dbo:Royalty whose dbp:placeOfBurial is dbr:Rome ?
+115,select distinct ?uri where { ?x dbp:ground dbr:Stoke-on-Trent . ?uri dbp:currentclub ?x . ?uri rdf:type dbo:SoccerPlayer },list the dbo:SoccerPlayer whose dbp:currentclub 's dbp:ground is dbr:Stoke-on-Trent ?
+116,select distinct ?uri where { dbr:Carl_Stokes dbp:president ?uri . dbr:Wyche_Fowler dbo:president ?uri },what is the dbp:president of the dbr:Carl_Stokes and dbp:president of the dbr:Wyche_Fowler ?
+117,select distinct ?uri where { ?uri dbp:language dbr:Swedish_language . ?uri rdf:type dbo:Film },what are the dbo:Film whose dbp:language is dbr:Swedish_language ?
+118,select distinct ?uri where { dbr:Kerguelen_Islands dbo:currency ?uri },what is the dbo:currency of dbr:Kerguelen_Islands ?
+119,select distinct ?uri where { ?x dbp:leaderName dbr:Justin_Trudeau . ?uri dbo:majorShrine ?x . },what are the owls whose dbo:majorShrine 's dbp:leaderName is dbr:Justin_Trudeau ?
+120,select distinct ?uri where { dbr:Hackweiser dbp:leaderName ?uri },what is the dbp:leaderName of dbr:Hackweiser ?
+121,select distinct ?uri where { dbr:Hank_Brown dbp:successor ?x . ?x dbo:birthPlace ?uri . },what is the dbo:birthPlace of the senator who is the dbp:successor of dbr:Hank_Brown ?
+122,select distinct ?uri where { dbr:Stephen_Urban dbo:battle ?uri . dbr:Ali_Habib_Mahmud dbp:battles ?uri },what is the dbo:battle of the dbr:Stephen_Urban and dbp:battles of the dbr:Ali_Habib_Mahmud ?
+123,select distinct ?uri where { dbr:Esnault-Pelterie_R.E.P._1 dbp:manufacturer ?x . ?x dbo:birthPlace ?uri . },what is the dbo:birthPlace of the engineer who is the dbp:manufacturer of dbr:Esnault-Pelterie_R.E.P._1 ?
+124,select distinct ?uri where { ?uri dbo:commander dbr:John_McEwen . ?uri dbo:commander dbr:Phạm_Văn_Đồng . ?uri rdf:type dbo:MilitaryConflict },what is the dbo:MilitaryConflict whose dbo:commander are dbr:John_McEwen and dbr:Phạm_Văn_Đồng ?
+125,select distinct ?uri where { ?uri dbp:judges dbr:Randy_Jackson . ?uri dbp:judges dbr:Jennifer_Lopez . ?uri rdf:type dbo:TelevisionShow },what is the dbo:TelevisionShow whose dbp:judges are dbr:Randy_Jackson and dbr:Jennifer_Lopez ?
+126,select distinct ?uri where { ?uri dbp:mother dbr:Cleopatra_V_of_Egypt . ?uri dbp:spouse dbr:Ptolemy_XIII_Theos_Philopator . ?uri rdf:type dbo:Royalty },what is the dbo:Royalty whose dbp:mother is dbr:Cleopatra_V_of_Egypt and dbp:spouse is dbr:Ptolemy_XIII_Theos_Philopator ?
+127,ask where { dbr:Morrissey dbo:associatedBand dbr:The_Smiths },is dbr:The_Smiths the dbo:associatedBand of dbr:Morrissey ?
+128,select distinct ?uri where { ?x dbo:manufacturer dbr:Refriango . ?x dbp:origin ?uri . ?x rdf:type dbo:Beverage },what is the dbp:origin of the dbo:Beverage whose dbo:manufacturer is dbr:Refriango ?
+129,select distinct ?uri where { dbr:Auckland_rugby_union_team dbo:league ?x . ?x dbo:country ?uri . },what is the dbo:country of the rugby league which is the dbo:league of dbr:Auckland_rugby_union_team ?
+130,select distinct ?uri where { ?x dbp:creator dbr:Timoteo_Jeffries . ?x dbp:format ?uri . ?x rdf:type dbo:RadioProgram },what is the dbp:format of the dbo:RadioProgram whose dbp:creator is dbr:Timoteo_Jeffries ?
+131,ask where { dbr:True_Grit_(novel) dbo:literaryGenre dbr:Western_(genre) },is dbr:Western_(genre) the dbo:literaryGenre of dbr:True_Grit_(novel) ?
+132,select distinct ?uri where { ?x dbp:primeminister dbr:Chung_Won-shik . ?x dbp:battles ?uri . ?x rdf:type dbo:President },what is the dbp:battles of the dbo:President whose dbp:primeminister is dbr:Chung_Won-shik ?
+133,select distinct ?uri where { ?uri dbo:distributor dbr:Cinema_International_Corporation },what are the movies whose dbo:distributor is dbr:Cinema_International_Corporation ?
+134,select distinct count ( ?uri ) where { ?x dbo:academicDiscipline dbr:Neuroimaging . ?x dbo:academicDiscipline ?uri },count the other dbo:academicDiscipline of the academic journals whose dbo:academicDiscipline is dbr:Neuroimaging ?
+135,select distinct ?uri where { ?x dbp:buildingType dbr:Ferris_wheel . ?x dbp:locationTown ?uri . },what is the dbp:locationTown of the building whose dbp:buildingType is dbr:Ferris_wheel ?
+136,select distinct count ( ?uri ) where { ?uri dbp:language dbr:Swedish_language . ?uri rdf:type dbo:Film },give me a count of dbo:Film whose dbp:language is dbr:Swedish_language ?
+137,select distinct ?uri where { dbr:21Vianet dbp:services ?uri . dbr:Google_Cloud_Connect dbo:computingPlatform ?uri },what is the dbp:services of the dbr:21Vianet and dbo:computingPlatform of the dbr:Google_Cloud_Connect ?
+138,select distinct ?uri where { dbr:Lekh_Castle dbo:location ?uri . dbr:Samur–Absheron_channel dbo:sourceCountry ?uri },what is the dbo:location of the dbr:Lekh_Castle and dbo:sourceCountry of the dbr:Samur–Absheron_channel ?
+139,select distinct ?uri where { ?x dbp:successor dbr:A._K._Singh . ?x dbp:party ?uri . ?x rdf:type dbo:Person },what is the dbp:party of the dbo:Person whose dbp:successor is dbr:A._K._Singh ?
+140,select distinct ?uri where { dbr:Sidney_Catlin_Partridge dbp:education ?uri . dbr:Cyril_Hume dbp:education ?uri . },what is the dbp:education of the dbr:Sidney_Catlin_Partridge and dbr:Cyril_Hume ?
+141,ask where { dbr:Lorenzo_de'_Medici dbp:mother dbr:Lucrezia_Tornabuoni },is dbr:Lucrezia_Tornabuoni the dbp:mother of dbr:Lorenzo_de'_Medici ?
+142,select distinct ?uri where { dbr:Special_26 dbp:recorded ?uri },what are the dbp:recorded of dbr:Special_26 ?
+143,select distinct ?uri where { dbr:David_Animle_Hansen dbp:allegiance ?uri },what is the dbp:allegiance of dbr:David_Animle_Hansen ?
+144,select distinct ?uri where { ?x dbp:notableInstruments dbr:Guitar . ?x dbo:associatedMusicalArtist ?uri . },what is the dbo:associatedMusicalArtist of the musical artists whose dbp:notableInstruments is dbr:Guitar ?
+145,select distinct ?uri where { ?x dbp:assembly dbr:Colombia . ?x dbp:parentCompany ?uri . ?x rdf:type dbo:Automobile },what is the dbp:parentCompany of the dbo:Automobile whose dbp:assembly is dbr:Colombia ?
+146,select distinct count ( ?uri ) where { ?x dbp:type dbr:Non-governmental_organization . ?x dbp:purpose ?uri . },what is the total nummber of dbp:purpose of the organisations which are non-governmental organization ?
+147,select distinct ?uri where { dbr:Katyayana_(Buddhist) dbp:religion ?uri . dbr:Palang_Dharma_Party dbo:ideology ?uri },what is the dbp:religion of the dbr:Katyayana_(Buddhist) and dbo:ideology of the dbr:Palang_Dharma_Party ?
+148,select distinct ?uri where { ?x dbo:writer dbr:Mark_Sandrich . ?x dbo:starring ?uri . ?x rdf:type dbo:Film },what is the dbo:starring of the dbo:Film whose dbo:writer is dbr:Mark_Sandrich ?
+149,select distinct ?uri where { dbr:Sullivan_Central_High_School dbp:rival ?x . ?x dbp:mascot ?uri . },what is the dbp:mascot of the school which is the dbp:rival of dbr:Sullivan_Central_High_School ?
+150,select distinct ?uri where { dbr:Putri_Raemawasti dbp:birthName ?uri },what is the dbp:birthName of dbr:Putri_Raemawasti ?
+151,select distinct ?uri where { dbr:MasterCard_Centre dbp:tenants ?uri . dbr:Antoine_Bibeau dbp:draftTeam ?uri },what is the dbp:tenants of the dbr:MasterCard_Centre and dbp:draftTeam of the dbr:Antoine_Bibeau ?
+152,select distinct ?uri where { ?uri dbp:branch dbr:Indiana_Territory },who is the office holder whose dbp:branch is dbr:Indiana_Territory ?
+153,select distinct ?uri where { ?x dbp:associatedActs dbr:René_&_Angela . ?x dbp:birthPlace ?uri . ?x rdf:type dbo:MusicalArtist },what is the dbp:birthPlace of the dbo:MusicalArtist whose dbp:associatedActs is dbr:René_&_Angela ?
+154,select distinct ?uri where { dbr:Language_Integrated_Query dbo:designer ?uri . },what is the dbo:designer of dbr:Language_Integrated_Query ?
+155,select distinct ?uri where { dbr:1997_Canadian_Grand_Prix dbp:poleDriver ?uri . dbr:1994_Spanish_Grand_Prix dbp:poleDriver ?uri . },what is the dbp:poleDriver of the dbr:1997_Canadian_Grand_Prix and dbr:1994_Spanish_Grand_Prix ?
+156,select distinct ?uri where { dbr:Ella_Loves_Cole dbo:subsequentWork ?x . ?x dbp:artist ?uri . },what is the dbp:artist of the owl which is the dbo:subsequentWork of dbr:Ella_Loves_Cole ?
+157,select distinct ?uri where { dbr:Downriver dbo:state ?uri . dbr:Cyrus_Mann dbp:birthPlace ?uri . },what is the dbo:state of the dbr:Downriver and dbp:birthPlace of the dbr:Cyrus_Mann ?
+158,"select distinct ?uri where { ?x dbo:deathPlace dbr:Tampa,_Florida . ?x dbo:occupation ?uri . }","what is the dbo:occupation of the people whose dbo:deathPlace is dbr:Tampa,_Florida ?"
+159,select distinct ?uri where { ?uri dbp:music dbr:Geoffrey_Burgon . ?uri dbp:editing dbr:Julian_Doyle_(filmmaker) . ?uri rdf:type dbo:Film },what is the dbo:Film whose dbp:music is dbr:Geoffrey_Burgon and dbp:editing is dbr:Julian_Doyle_(filmmaker) ?
+160,select distinct ?uri where { dbr:Evraz dbo:owningCompany ?uri . dbr:Chelsea_F.C. dbp:owner ?uri },what is the dbo:owningCompany of the dbr:Evraz and dbp:owner of the dbr:Chelsea_F.C. ?
+161,select distinct ?uri where { ?uri dbo:associate dbr:Marcus_Calpurnius_Bibulus . ?uri dbo:child dbr:Augustus . ?uri rdf:type dbo:OfficeHolder },what is the dbo:OfficeHolder whose dbo:associate is dbr:Marcus_Calpurnius_Bibulus and dbo:child is dbr:Augustus ?
+162,select distinct count ( ?uri ) where { ?x dbo:recordedIn dbr:Miami . ?x dbp:writer ?uri . },what is the total number of dbp:writer of the singles whose dbo:recordedIn is dbr:Miami ?
+163,select distinct ?uri where { dbr:Money_(Pink_Floyd_song) dbp:album ?x . ?x dbp:producer ?uri . },what is the dbp:producer of the dbp:album which is the dbp:album of dbr:Money_(Pink_Floyd_song) ?
+164,select distinct ?uri where { ?uri dbo:foundedBy dbr:Fusajiro_Yamauchi . ?uri rdf:type dbo:Company },what is the dbo:Company whose dbo:foundedBy is dbr:Fusajiro_Yamauchi ?
+165,select distinct count ( ?uri ) where { dbr:European_Go_Federation dbp:membership ?uri . },how many dbp:membership are there in dbr:European_Go_Federation ?
+166,select distinct ?uri where { dbr:Daniel_L._D._Granger dbp:state ?uri . dbr:Job_Durfee dbp:state ?uri . },what is the dbp:state of the dbr:Daniel_L._D._Granger and dbr:Job_Durfee ?
+167,"select distinct ?uri where { dbr:Live_in_Detroit,_MI dbo:recordedIn ?uri . dbr:Ken_Holland dbo:residence ?uri }","what is the dbo:recordedIn of the dbr:Live_in_Detroit,_MI and dbo:residence of the dbr:Ken_Holland ?"
+168,select distinct ?uri where { ?x dbo:recordLabel dbr:EMI . ?x dbo:associatedMusicalArtist ?uri . ?x rdf:type dbo:MusicalArtist },what is the dbo:associatedMusicalArtist of the dbo:MusicalArtist whose dbo:recordLabel is dbr:EMI ?
+169,select distinct ?uri where { ?x dbp:doctoralStudents dbr:Mary_Ainsworth . ?uri dbp:doctoralAdvisor ?x . ?uri rdf:type dbo:Scientist },what is the dbo:Scientist whose dbp:doctoralAdvisor 's dbp:doctoralStudents is dbr:Mary_Ainsworth ?
+170,select distinct ?uri where { dbr:Hinkey_Haines dbp:debutteam ?uri . dbr:Deion_Sanders dbp:debutteam ?uri . },what is the dbp:debutteam of the dbr:Hinkey_Haines and dbr:Deion_Sanders ?
+171,select distinct ?uri where { dbr:Virendra_Kataria dbp:party ?uri },what is the dbp:party of dbr:Virendra_Kataria ?
+172,"select distinct count ( ?uri ) where { ?x dbp:headquarters dbr:Beverly_Hills,_California . ?uri dbo:presenter ?x . ?uri rdf:type dbo:Award }","what is the total number of dbo:Award whose dbo:presenter 's dbp:headquarters is dbr:Beverly_Hills,_California ?"
+173,ask where { dbr:Jordan_River dbo:leftTributary dbr:Dan_River_(Middle_East) },is dbr:Dan_River_(Middle_East) the dbo:leftTributary of dbr:Jordan_River ?
+174,select distinct count ( ?uri ) where { ?x dbp:notableInstruments dbr:Guitar . ?x dbo:associatedMusicalArtist ?uri . ?uri rdf:type dbo:Artist },what is the total number of dbo:associatedMusicalArtist of the musical artists whose dbp:notableInstruments is dbr:Guitar ?
+175,select distinct ?uri where { dbr:Marion_Dufresne_(1995) dbo:operator ?x . ?x dbo:currency ?uri . },what is the dbo:currency of the country which is the dbo:operator of dbr:Marion_Dufresne_(1995) ?
+176,select distinct ?uri where { dbr:Liverpool_Playhouse dbo:operatedBy ?uri },what is the dbo:operatedBy of dbr:Liverpool_Playhouse ?
+177,select distinct ?uri where { dbr:The_Lost_Special dbp:series ?uri },who is the dbp:series of dbr:The_Lost_Special ?
+178,select distinct ?uri where { ?uri dbp:notableInstruments dbr:Ludwig_Drums . ?uri dbo:instrument dbr:Remo . ?uri rdf:type dbo:MusicalArtist },what is the dbo:MusicalArtist whose dbp:notableInstruments is dbr:Ludwig_Drums and dbo:instrument is dbr:Remo ?
+179,select distinct ?uri where { dbr:Jack_Ryan_(politician) dbo:nominee ?uri . dbr:Robert_Sarvis dbo:nominee ?uri . ?uri rdf:type dbo:Organisation },what is the dbo:nominee of the dbr:Jack_Ryan_(politician) and dbr:Robert_Sarvis ?
+180,select distinct ?uri where { ?x dbo:ingredient dbr:Shallot . ?x dbo:country ?uri . ?x rdf:type dbo:Food },what is the dbo:country of the dbo:Food whose dbo:ingredient is dbr:Shallot ?
+181,select distinct ?uri where { dbr:Galician_Wikipedia dbp:owner ?uri . dbr:German_Wikipedia dbo:owner ?uri . },what is the dbp:owner of the dbr:Galician_Wikipedia and dbp:owner of the dbr:German_Wikipedia ?
+182,select distinct ?uri where { dbr:Alexander_Magleby dbp:university ?uri },what is the dbp:university of dbr:Alexander_Magleby ?
+183,select distinct ?uri where { dbr:Craig_Van_Tilbury dbo:occupation ?uri . dbr:Islamic_Azad_University_Central_Tehran_Branch dbo:sport ?uri },what is the dbo:occupation of the dbr:Craig_Van_Tilbury and dbo:sport of the dbr:Islamic_Azad_University_Central_Tehran_Branch ?
+184,select distinct ?uri where { ?x dbo:leaderName dbr:Alex_Chalk . ?uri dbo:location ?x . ?uri rdf:type dbo:GovernmentAgency },list the dbo:GovernmentAgency whose dbo:location 's dbo:leaderName is dbr:Alex_Chalk ?
+185,select distinct ?uri where { ?x dbo:instrument dbr:Hammond_organ . ?uri dbo:musicComposer ?x . ?uri rdf:type dbo:Film },what are the dbo:Film whose dbo:musicComposer 's dbo:instrument is dbr:Hammond_organ ?
+186,select distinct ?uri where { dbr:Janaka_Thissakuttiarachchi dbp:religion ?uri . dbr:Atiśa dbo:occupation ?uri . },what is the dbp:religion of the dbr:Janaka_Thissakuttiarachchi and dbo:occupation of the dbr:Atiśa ?
+187,select distinct ?uri where { ?uri dbp:artist dbr:Christopher_Franke . ?uri dbo:starring dbr:Jason_Carter_(actor) . ?uri rdf:type dbo:TelevisionShow },what is the dbo:TelevisionShow whose dbp:artist is dbr:Christopher_Franke and dbo:starring is dbr:Jason_Carter_(actor) ?
+188,select distinct ?uri where { ?x dbp:youthclubs dbr:Lighthouse_Boys_Club . ?x dbp:debutteam ?uri . },what is the dbp:debutteam of the soccer player whose dbp:youthclubs is dbr:Lighthouse_Boys_Club ?
+189,select distinct ?uri where { ?x dbo:locatedInArea dbr:Oddamavadi . ?x dbp:designer ?uri . ?x rdf:type dbo:Bridge },what is the dbp:designer of the dbo:Bridge whose dbo:locatedInArea is dbr:Oddamavadi ?
+190,select distinct ?uri where { ?x dbp:founder dbr:Chris_DuBois . ?x dbp:founder ?uri . ?x rdf:type dbo:RecordLabel },what are the other dbp:founder of the dbo:RecordLabel whose dbp:founder is dbr:Chris_DuBois ?
+191,select distinct ?uri where { ?x dbo:ingredient dbr:Coconut . ?x dbp:country ?uri . ?x rdf:type dbo:Food },what is the dbp:country of the dbo:Food whose dbo:ingredient is dbr:Coconut ?
+192,select distinct count ( ?uri ) where { ?x dbo:computingPlatform dbr:Amiga . ?x dbp:genre ?uri . },"how many dbp:genre are there , of the video games whose dbo:computingPlatform is dbr:Amiga ?"
+193,select distinct count ( ?uri ) where { ?x dbp:battles dbr:Battle_of_the_Bulge . ?x dbo:relation ?uri . },"how many dbo:relation are there , of the military people whose dbp:battles is dbr:Battle_of_the_Bulge ?"
+194,ask where { dbr:Jevan_Snead dbp:position dbr:Quarterback },is dbr:Quarterback the dbp:position of dbr:Jevan_Snead ?
+195,select distinct ?uri where { ?x dbo:restingPlace dbr:Ronda . ?uri dbp:director ?x . },what are the movies whose dbp:director 's dbo:restingPlace is dbr:Ronda ?
+196,ask where { dbr:Cascade_Airways dbo:hubAirport dbr:Seattle },is dbr:Seattle the dbo:hubAirport of dbr:Cascade_Airways ?
+197,select distinct ?uri where { dbr:Mrunalini_Kunte dbo:relative ?x . ?x dbp:knownFor ?uri . },what is the dbp:knownFor of the person who is the dbo:relative of dbr:Mrunalini_Kunte ?
+198,select distinct ?uri where { dbr:Russell_T_Davies dbp:notableworks ?uri },what are the dbp:notableworks of dbr:Russell_T_Davies ?
+199,select distinct ?uri where { ?x dbp:operatingSystem dbr:Unix-like . ?x dbo:developer ?uri . ?x rdf:type dbo:Software },what is the dbo:developer of the dbo:Software whose dbp:operatingSystem is dbr:Unix-like ?
+200,ask where { dbr:Noko dbo:associatedBand dbr:James_Maker },is dbr:James_Maker the dbo:associatedBand of dbr:Noko ?
+201,select distinct ?uri where { dbr:New_Sanno_Hotel dbo:tenant ?uri . dbr:Gary_Holder-Winfield dbo:militaryBranch ?uri },what is the dbo:tenant of the dbr:New_Sanno_Hotel and dbo:militaryBranch of the dbr:Gary_Holder-Winfield ?
+202,select distinct ?uri where { ?uri dbo:managerClub dbr:Middlesbrough_F.C. . ?uri dbp:managerclubs dbr:England_national_under-21_football_team . ?uri rdf:type dbo:SportsManager },what is the dbo:SportsManager whose dbo:managerClub is dbr:Middlesbrough_F.C. and dbp:managerclubs is dbr:England_national_under-21_football_team ?
+203,select distinct ?uri where { dbr:The_Elders_(organization) dbp:keyPeople ?uri . dbr:United_World_Colleges dbo:president ?uri },what is the dbp:keyPeople of the dbr:The_Elders_(organization) and dbo:president of the dbr:United_World_Colleges ?
+204,select distinct ?uri where { ?x dbp:placeOfBirth dbr:Mangalore . ?x dbp:party ?uri . },what is the dbp:party of the office holder whose dbp:placeOfBirth is dbr:Mangalore ?
+205,select distinct ?uri where { dbr:Cy-Fair_High_School dbo:county ?x . ?x dbo:largestCity ?uri . },what is the dbo:largestCity of the administrative region which is the dbo:county of dbr:Cy-Fair_High_School ?
+206,select distinct ?uri where { dbr:Peter_Blay dbp:allegiance ?uri },what is the dbp:allegiance of dbr:Peter_Blay ?
+207,select distinct ?uri where { ?uri dbo:subsequentWork dbr:Crusade_(TV_series) . ?uri dbp:composer dbr:Stewart_Copeland . ?uri rdf:type dbo:TelevisionShow },what is the dbo:TelevisionShow whose dbo:subsequentWork is dbr:Crusade_(TV_series) and dbp:composer is dbr:Stewart_Copeland ?
+208,"select distinct ?uri where { ?x dbp:successor dbr:Derick_Heathcoat-Amory,_1st_Viscount_Amory . ?x dbp:primeminister ?uri . }","what is the dbp:primeminister of the office holders whose dbp:successor is dbr:Derick_Heathcoat-Amory,_1st_Viscount_Amory ?"
+209,select distinct ?uri where { ?uri dbo:family dbr:Orthonychidae . ?uri rdf:type dbo:Bird },what are the dbo:Bird whose dbo:family is dbr:Orthonychidae ?
+210,ask where { dbr:U.S._Route_281 dbp:junction dbr:San_Antonio },is dbr:San_Antonio the dbp:junction of dbr:U.S._Route_281 ?
+211,ask where { dbr:U.N.I.T.Y. dbo:musicalArtist dbr:Queen_Latifah },is dbr:Queen_Latifah the dbo:musicalArtist of dbr:U.N.I.T.Y. ?
+212,select distinct ?uri where { ?uri dbp:notableInstruments dbr:Gibson_Guitar_Corporation },what musical artists 's dbp:notableInstruments is dbr:Gibson_Guitar_Corporation ?
+213,ask where { dbr:The_Road_Ahead_(Bill_Gates_book) dbo:coverArtist dbr:Annie_Leibovitz },is dbr:Annie_Leibovitz the dbo:coverArtist of dbr:The_Road_Ahead_(Bill_Gates_book) ?
+214,select distinct ?uri where { dbr:Michael_Springer dbp:team ?uri . dbr:Donald_Brooks dbp:education ?uri },what is the dbp:team of the dbr:Michael_Springer and dbp:education of the dbr:Donald_Brooks ?
+215,select distinct ?uri where { ?uri dbo:distributor dbr:Cinema_International_Corporation . ?uri dbp:writer dbr:Monty_Python . ?uri rdf:type dbo:Film },what is the dbo:Film whose dbo:distributor is dbr:Cinema_International_Corporation and dbp:writer is dbr:Monty_Python ?
+216,select distinct ?uri where { ?uri dbp:writer dbr:Erik_Jendresen . ?uri dbp:writer dbr:John_Orloff . ?uri rdf:type dbo:TelevisionShow },whose dbp:writer are dbr:Erik_Jendresen and dbr:John_Orloff ?
+217,select distinct ?uri where { dbr:Kelly_Brook dbo:partner ?uri },who are the dbo:partner of dbr:Kelly_Brook ?
+218,select distinct ?uri where { ?uri dbp:partner dbr:Gerard_Piqué . },who is the person whose dbp:partner is dbr:Gerard_Piqué ?
+219,select distinct ?uri where { ?x dbp:coach dbr:Chip_Kelly . ?uri dbo:debutTeam ?x . },what are the american football players whose dbo:debutTeam 's dbp:coach is dbr:Chip_Kelly ?
+220,"select distinct ?uri where { ?uri dbo:sourceCountry dbr:Zambia . ?uri dbo:sourceRegion dbr:North-Western_Province,_Zambia . ?uri rdf:type dbo:River }","what is the dbo:River whose dbo:sourceCountry is dbr:Zambia and dbo:sourceRegion is dbr:North-Western_Province,_Zambia ?"
+221,"select distinct ?uri where { dbr:Fiq,_Ethiopia dbo:country ?uri . dbr:Adugna_Deyas dbp:birthPlace ?uri . }","what is the dbo:country of the dbr:Fiq,_Ethiopia and dbp:birthPlace of the dbr:Adugna_Deyas ?"
+222,select distinct ?uri where { ?x dbp:primeminister dbr:Lee_Hyun-jae . ?x dbo:religion ?uri . ?x rdf:type dbo:President },what is the dbo:religion of the dbo:President whose dbp:primeminister is dbr:Lee_Hyun-jae ?
+223,select distinct ?uri where { dbr:Neungin_High_School dbp:religiousAffiliation ?uri },what is the dbp:religiousAffiliation of dbr:Neungin_High_School ?
+224,select distinct ?uri where { ?uri dbo:child dbr:Lori_Black . ?uri dbp:successor dbr:Adrian_A._Basora . ?uri rdf:type dbo:OfficeHolder },what is the dbo:OfficeHolder whose dbo:child is dbr:Lori_Black and dbp:successor is dbr:Adrian_A._Basora ?
+225,select distinct ?uri where { dbr:Xocolatlite dbo:colour ?uri },what is the dbo:colour of dbr:Xocolatlite ?
+226,select distinct ?uri where { ?x dbp:almaMater dbr:Hellenic_Naval_Academy . ?x dbo:stateOfOrigin ?uri . ?x rdf:type dbo:President },what is the dbo:stateOfOrigin of the dbo:President whose dbp:almaMater is dbr:Hellenic_Naval_Academy ?
+227,select distinct ?uri where { ?x dbo:foundationPlace dbr:City_of_Newcastle . ?x dbo:regionServed ?uri . ?x rdf:type dbo:Company },what is the dbo:regionServed of the dbo:Company whose dbo:foundationPlace is dbr:City_of_Newcastle ?
+228,select distinct ?uri where { ?x dbo:publisher dbr:Interplay_Entertainment . ?x dbp:genre ?uri . ?x rdf:type dbo:VideoGame },what is the dbp:genre of the dbo:VideoGame whose dbo:publisher is dbr:Interplay_Entertainment ?
+229,select distinct ?uri where { dbr:EMMS dbo:developer ?uri },what is the dbo:developer of dbr:EMMS ?
+230,select distinct ?uri where { dbr:Pong_Pha dbo:timeZone ?uri },what is the dbo:timeZone of dbr:Pong_Pha ?
+231,select distinct ?uri where { dbr:Chandra_Shekhar dbo:otherParty ?uri . dbr:Datla_Satyanarayana_Raju dbo:party ?uri },what is the dbo:otherParty of the dbr:Chandra_Shekhar and dbo:party of the dbr:Datla_Satyanarayana_Raju ?
+232,select distinct ?uri where { ?uri dbp:manager dbr:Chip_Hale . ?uri rdf:type dbo:BaseballTeam },what is the dbo:BaseballTeam whose dbp:manager is dbr:Chip_Hale ?
+233,select distinct ?uri where { dbr:Reigh_Count dbo:honours ?uri },what is the dbo:honours of dbr:Reigh_Count ?
+234,select distinct ?uri where { ?x dbo:tenant dbr:2014_FIFA_U-17_Women's_World_Cup . ?x dbo:builder ?uri . },what is the dbo:builder of the stadium whose dbo:tenant is dbr:2014_FIFA_U-17_Women's_World_Cup ?
+235,select distinct ?uri where { ?uri dbo:related dbr:Doctor_Who_Confidential . ?uri rdf:type dbo:TelevisionShow },what is the dbo:TelevisionShow whose dbo:related is dbr:Doctor_Who_Confidential ?
+236,select distinct ?uri where { dbr:Jurgens_Site dbp:nearestCity ?uri . dbr:Jimmie_Heuga dbp:deathPlace ?uri },what is the dbp:nearestCity of the dbr:Jurgens_Site and dbp:deathPlace of the dbr:Jimmie_Heuga ?
+237,select distinct count ( ?uri ) where { ?uri dbo:foundationPlace dbr:United_States . ?uri rdf:type dbo:Company },how many dbo:Company are there whose dbo:foundationPlace is dbr:United_States ?
+238,select distinct count ( ?uri ) where { ?uri dbo:distributor dbr:Cinema_International_Corporation . ?uri rdf:type dbo:Film },give me a count of dbo:Film whose dbo:distributor is dbr:Cinema_International_Corporation ?
+239,select distinct ?uri where { dbr:Wyche_Fowler dbo:president ?uri },who is the dbo:president of dbr:Wyche_Fowler ?
+240,select distinct ?uri where { ?uri dbo:locationCity dbr:Texas . ?uri dbp:founder dbr:Jim_Harris_(entrepreneur) . ?uri rdf:type dbo:Company },what is the dbo:Company whose dbo:locationCity is dbr:Texas and dbp:founder is dbr:Jim_Harris_(entrepreneur) ?
+241,select distinct ?uri where { dbr:Cornell_University_Press dbo:parentCompany ?uri },what is the dbo:parentCompany of dbr:Cornell_University_Press ?
+242,select distinct ?uri where { ?uri dbo:operatingSystem dbr:Microsoft_Windows . ?uri dbo:license dbr:Software_as_a_service . ?uri rdf:type dbo:Software },what are the dbo:Software whose dbo:operatingSystem is dbr:Microsoft_Windows and dbo:license is dbr:Software_as_a_service ?
+243,select distinct ?uri where { ?x dbo:channel dbr:NBC . ?x dbp:presenter ?uri . ?x rdf:type dbo:TelevisionShow },what is the dbp:presenter of the dbo:TelevisionShow whose dbo:channel is dbr:NBC ?
+244,"select distinct ?uri where { ?uri dbo:restingPlace dbr:Plymouth,_Vermont . ?uri dbp:predecessor dbr:Samuel_W._McCall . ?uri rdf:type dbo:Person }","what is the dbo:Person whose dbo:restingPlace is dbr:Plymouth,_Vermont and dbp:predecessor is dbr:Samuel_W._McCall ?"
+245,select distinct ?uri where { ?x dbp:operatingSystem dbr:Unix-like . ?uri dbp:programmingLanguage ?x . ?uri rdf:type dbo:Software },what are the dbo:Software whose dbp:programmingLanguage 's dbp:operatingSystem is dbr:Unix-like ?
+246,"ask where { dbr:Saint_Lawrence_River dbo:sourceMountain dbr:Kingston,_Ontario }","is dbr:Kingston,_Ontario the dbo:sourceMountain of dbr:Saint_Lawrence_River ?"
+247,ask where { dbr:Toronto_Maple_Leafs dbp:headCoach dbr:Mike_Babcock },is dbr:Mike_Babcock the dbp:headCoach of dbr:Toronto_Maple_Leafs ?
+248,select distinct ?uri where { ?x dbo:previousWork dbr:Bombshell_(Smash) . ?x dbp:guests ?uri . ?x rdf:type dbo:TelevisionEpisode },what is the dbp:guests of the dbo:TelevisionEpisode whose dbo:previousWork is dbr:Bombshell_(Smash) ?
+249,select distinct ?uri where { ?x dbp:branch dbr:Continental_Army . ?x dbp:president ?uri . },what is the dbp:president of the office holders whose dbp:branch is dbr:Continental_Army ?
+250,select distinct ?uri where { dbr:Menetries's_warbler dbo:binomialAuthority ?uri },what are the dbo:binomialAuthority of dbr:Menetries's_warbler ?
+251,select distinct ?uri where { ?uri dbo:relative dbr:Duck_family_(Disney) . ?uri dbp:relatives dbr:Clan_McDuck . ?uri rdf:type dbo:FictionalCharacter },what is the dbo:FictionalCharacter whose dbo:relative is dbr:Duck_family_(Disney) and dbp:relatives is dbr:Clan_McDuck ?
+252,select distinct ?uri where { dbr:Jerome_B._Chaffee dbp:state ?uri },what is the dbp:state of dbr:Jerome_B._Chaffee ?
+253,select distinct ?uri where { dbr:Lucky_You_(film) dbp:screenplay ?x . ?x dbo:award ?uri . },what is the dbo:award of the screenwriter who is the dbp:screenplay of dbr:Lucky_You_(film) ?
+254,select distinct ?uri where { dbr:Georges_Wolinski dbp:placeOfDeath ?uri . dbr:Judson_Huss dbp:deathPlace ?uri },what is the dbp:placeOfDeath of the dbr:Georges_Wolinski and dbp:deathPlace of the dbr:Judson_Huss ?
+255,select distinct ?uri where { ?uri dbo:cpu dbr:Marvell_Technology_Group . ?uri rdf:type dbo:InformationAppliance },what is the dbo:InformationAppliance whose dbo:cpu is dbr:Marvell_Technology_Group ?
+256,select distinct ?uri where { ?uri dbo:manufacturer dbr:Foxconn . ?uri rdf:type dbo:InformationAppliance },what are the dbo:InformationAppliance whose dbo:manufacturer is dbr:Foxconn ?
+257,select distinct ?uri where { ?x dbp:deputy dbr:Jenny_Macklin . ?uri dbp:predecessor ?x . },what are the office holders whose dbp:predecessor 's dbp:deputy is dbr:Jenny_Macklin ?
+258,select distinct count ( ?uri ) where { dbr:AN/FSQ-7_Combat_Direction_Central dbo:region ?uri . },count the number of dbo:region in dbr:AN/FSQ-7_Combat_Direction_Central ?
+259,ask where { dbr:Cathedral_Peak_(California) dbo:firstAscentPerson dbr:John_Muir },is dbr:John_Muir the dbo:firstAscentPerson of dbr:Cathedral_Peak_(California) ?
+260,select distinct ?uri where { ?uri dbp:voices dbr:Mona_Marshall . ?uri dbp:distributor dbr:Comedy_Central . ?uri rdf:type dbo:TelevisionShow },what is the dbo:TelevisionShow whose dbp:voices is dbr:Mona_Marshall and dbp:distributor is dbr:Comedy_Central ?
+261,select distinct ?uri where { ?x dbo:locatedInArea dbr:Yosemite_National_Park . ?x dbo:firstAscentPerson ?uri . },what is the dbo:firstAscentPerson of the mountains whose dbo:locatedInArea is dbr:Yosemite_National_Park ?
+262,"select distinct ?uri where { ?uri dbp:allegiance dbr:Colony_of_Virginia . ?uri dbp:restingplace dbr:Montpelier_(Orange,_Virginia) . }","what is the office holder whose dbp:allegiance is dbr:Colony_of_Virginia and dbp:restingplace is dbr:Montpelier_(Orange,_Virginia) ?"
+263,select distinct ?uri where { ?uri dbp:successor dbr:PlayStation_4 . },what information appliance 's dbp:successor is dbr:PlayStation_4 ?
+264,select distinct ?uri where { ?x dbp:mascot dbr:Fighting_Tiger . ?uri dbo:highschool ?x . },what is the american football player whose dbo:highschool 's dbp:mascot is dbr:Fighting_Tiger ?
+265,select distinct ?uri where { dbr:Jerusalem_Institute_of_Justice dbo:service ?uri . dbr:Gaza–Israel_conflict dbp:result ?uri },what is the dbo:service of the dbr:Jerusalem_Institute_of_Justice and dbp:result of the dbr:Gaza–Israel_conflict ?
+266,select distinct count ( ?uri ) where { ?x dbp:deathCause dbr:Suicide . ?x dbo:occupation ?uri . },"how many dbo:occupation are there , of the owls whose dbp:deathCause is dbr:Suicide ?"
+267,select distinct count ( ?uri ) where { dbr:Batman_Live dbp:characters ?uri . ?uri rdf:type dbo:ComicsCharacter },count the number of dbp:characters in dbr:Batman_Live ?
+268,select distinct ?uri where { ?x dbo:homeStadium dbr:Camp_Nou . ?x dbp:name ?uri . },what is the dbp:name of the owls whose dbo:homeStadium is dbr:Camp_Nou ?
+269,select distinct ?uri where { ?x dbo:governor dbr:Bill_Clements . ?x dbp:branch ?uri . ?x rdf:type dbo:Politician },what is the dbp:branch of the dbo:Politician whose dbo:governor is dbr:Bill_Clements ?
+270,select distinct ?uri where { dbr:Teperberg_1870 dbp:locationCountry ?uri },what is the dbp:locationCountry of dbr:Teperberg_1870 ?
+271,select distinct ?uri where { ?x dbp:instruments dbr:Bass_guitar . ?x dbo:stylisticOrigin ?uri . ?x rdf:type dbo:MusicGenre },what is the dbo:stylisticOrigin of the dbo:MusicGenre whose dbp:instruments is dbr:Bass_guitar ?
+272,select distinct ?uri where { dbr:Allen_Walker dbo:voice ?uri . dbr:Kimihiro_Watanuki dbo:voice ?uri . },who is the dbo:voice of the dbr:Allen_Walker and dbr:Kimihiro_Watanuki ?
+273,select distinct ?uri where { dbr:Purvis_Eureka dbp:engine ?uri },what are the dbp:engine of dbr:Purvis_Eureka ?
+274,select distinct ?uri where { dbr:Jonathan_Haskell dbp:battles ?x . ?x dbp:combatant ?uri . },what is the dbp:combatant of the military conflict which is the dbp:battles of dbr:Jonathan_Haskell ?
+275,select distinct ?uri where { dbr:Toll_Global_Express dbo:regionServed ?uri . dbr:LPGA dbo:country ?uri },what is the dbo:regionServed of the dbr:Toll_Global_Express and dbo:country of the dbr:LPGA ?
+276,select distinct ?uri where { dbr:Ryan_Powell_(lacrosse) dbo:team ?uri },what is the dbo:team of dbr:Ryan_Powell_(lacrosse) ?
+277,select distinct count ( ?uri ) where { ?x dbo:draftTeam dbr:Detroit_Pistons . ?x dbp:placeOfDeath ?uri . ?uri rdf:type dbo:Location },"how many dbp:placeOfDeath are there , of the basketball players whose dbo:draftTeam is dbr:Detroit_Pistons ?"
+278,select distinct ?uri where { dbr:Julie_Hastings dbo:club ?uri },what is the dbo:club of dbr:Julie_Hastings ?
+279,"select distinct ?uri where { ?uri dbo:campus dbr:Indiana . ?uri dbp:affiliations dbr:Kaplan,_Inc. . ?uri rdf:type dbo:University }","what is the dbo:University whose dbo:campus is dbr:Indiana and dbp:affiliations is dbr:Kaplan,_Inc. ?"
+280,ask where { dbr:The_Smiths dbo:formerBandMember dbr:Morrissey },is dbr:Morrissey the dbo:formerBandMember of dbr:The_Smiths ?
+281,"select distinct ?uri where { ?uri dbp:sourceLocation dbr:Kingston,_Ontario . ?uri rdf:type dbo:River }","what is the dbo:River whose dbp:sourceLocation is dbr:Kingston,_Ontario ?"
+282,select distinct count ( ?uri ) where { dbr:Kingsley_Wood dbo:successor ?x . ?x dbp:primeminister ?uri . ?x rdf:type dbo:OfficeHolder },how many dbp:primeminister are there of the dbo:OfficeHolder who is the dbo:successor of dbr:Kingsley_Wood ?
+283,select distinct count ( ?uri ) where { ?x dbo:employer dbr:McDonnell_Aircraft . ?x dbo:employer ?uri },give me the total number of dbo:employer of the engineers whose dbo:employer is dbr:McDonnell_Aircraft ?
+284,"select distinct ?uri where { ?uri dbp:affiliations dbr:Kaplan,_Inc. . ?uri dbo:campus dbr:Iowa . ?uri rdf:type dbo:University }","what is the dbo:University whose dbp:affiliations is dbr:Kaplan,_Inc. and dbo:campus is dbr:Iowa ?"
+285,select distinct ?uri where { dbr:Secrets_and_Lies_(U.S._TV_series) dbo:distributor ?x . ?x dbo:regionServed ?uri . },what is the dbo:regionServed of the owl which is the dbo:distributor of dbr:Secrets_and_Lies_(U.S._TV_series) ?
+286,select distinct ?uri where { ?uri dbp:neighboringMunicipalities dbr:Lancy . ?uri rdf:type dbo:Settlement },what are the dbo:Settlement whose dbp:neighboringMunicipalities is dbr:Lancy ?
+287,select distinct ?uri where { dbr:Toms_Creek_(Monocacy_River) dbo:leftTributary ?x . ?x dbo:state ?uri . },what is the dbo:state of the stream which is the dbo:leftTributary of dbr:Toms_Creek_(Monocacy_River) ?
+288,select distinct count ( ?uri ) where { ?x dbp:prizes dbr:National_Medal_of_Science . ?x dbp:doctoralStudents ?uri . },what is the total number of dbp:doctoralStudents of the scientists whose dbp:prizes is dbr:National_Medal_of_Science ?
+289,select distinct count ( ?uri ) where { ?x dbp:starring dbr:Joey_McIntyre . ?x dbp:starring ?uri },what is the total number of other dbp:starring of the television shows whose dbp:starring is dbr:Joey_McIntyre ?
+290,select distinct ?uri where { dbr:David_Scherman dbp:training ?uri },what is the dbp:training of dbr:David_Scherman ?
+291,select distinct ?uri where { dbr:Switzerland_at_the_2004_Summer_Olympics dbp:flagbearer ?uri . dbr:Switzerland_at_the_2008_Summer_Olympics dbp:flagbearer ?uri . },what is the dbp:flagbearer of the dbr:Switzerland_at_the_2004_Summer_Olympics and dbr:Switzerland_at_the_2008_Summer_Olympics ?
+292,select distinct ?uri where { ?x dbp:children dbr:Angelina_Jolie . ?x dbo:award ?uri . },what is the dbo:award of the person whose dbp:children is dbr:Angelina_Jolie ?
+293,ask where { dbr:American_Psycho dbp:coverArtist dbr:Marshall_Arisman },is dbr:Marshall_Arisman the dbp:coverArtist of dbr:American_Psycho ?
+294,select distinct count ( ?uri ) where { ?uri dbo:citizenship dbr:Statelessness . },how many scientists are there whose dbo:citizenship is dbr:Statelessness ?
+295,select distinct ?uri where { ?x dbo:commander dbr:Zuo_Zongtang . ?x dbo:territory ?uri . ?x rdf:type dbo:MilitaryConflict },what is the dbo:territory of the dbo:MilitaryConflict whose dbo:commander is dbr:Zuo_Zongtang ?
+296,select distinct ?uri where { ?uri dbo:literaryGenre dbr:Utopian_and_dystopian_fiction },what are the books whose dbo:literaryGenre is dbr:Utopian_and_dystopian_fiction ?
+297,select distinct ?uri where { ?x dbp:owner dbr:Zambezi_River_Authority . ?x dbo:river ?uri . },what is the dbo:river of the dam whose dbp:owner is dbr:Zambezi_River_Authority ?
+298,select distinct ?uri where { dbr:Sings_Kristofferson dbp:artist ?uri . dbr:Milk_Cow_Blues dbo:artist ?uri . },what is the dbp:artist of the dbr:Sings_Kristofferson and dbo:artist of the dbr:Milk_Cow_Blues ?
+299,select distinct ?uri where { ?uri dbo:executiveProducer dbr:Glen_and_Les_Charles . ?uri dbp:company dbr:Paramount_Television . ?uri rdf:type dbo:TelevisionShow },what is the dbo:TelevisionShow whose dbo:executiveProducer is dbr:Glen_and_Les_Charles and dbp:company is dbr:Paramount_Television ?
+300,select distinct ?uri where { dbr:The_National_Herald_(India) dbo:owner ?uri . dbr:Kumta dbp:governmentType ?uri },what is the dbo:owner of the dbr:The_National_Herald_(India) and dbp:governmentType of the dbr:Kumta ?
+301,select distinct ?uri where { dbr:Pulau_Ubin dbo:largestCity ?uri },what is the dbo:largestCity of dbr:Pulau_Ubin ?
+302,select distinct ?uri where { ?x dbo:sire dbr:Karinga_Bay . ?x dbp:race ?uri . ?x rdf:type dbo:Horse },list the dbp:race of the dbo:Horse whose dbo:sire is dbr:Karinga_Bay ?
+303,select distinct count ( ?uri ) where { ?uri dbo:family dbr:Ape . },how many mammals are there whose dbo:family is dbr:Ape ?
+304,select distinct ?uri where { ?x dbp:hairColor dbr:Brown_hair . ?x dbo:residence ?uri . },list the dbo:residence of the beauty queens whose dbp:hairColor is dbr:Brown_hair ?
+305,select distinct ?uri where { ?uri dbp:creator dbr:Simon_Fuller . ?uri dbp:judges dbr:Jennifer_Lopez . ?uri rdf:type dbo:TelevisionShow },what is the dbo:TelevisionShow whose dbp:creator is dbr:Simon_Fuller and dbp:judges is dbr:Jennifer_Lopez ?
+306,select distinct ?uri where { ?uri dbp:starring dbr:Momoko_Kōchi },what is the movie whose dbp:starring is dbr:Momoko_Kōchi ?
+307,select distinct ?uri where { ?uri dbo:order dbr:Diprotodontia . ?uri dbo:phylum dbr:Chordate . ?uri rdf:type dbo:Mammal },what are the dbo:Mammal whose dbo:order is dbr:Diprotodontia and dbo:phylum is dbr:Chordate ?
+308,select distinct ?uri where { ?uri dbp:foundation dbr:New_Mexico . ?uri dbp:services dbr:Outlook.com . ?uri rdf:type dbo:Company },what is the dbo:Company whose dbp:foundation is dbr:New_Mexico and dbp:services is dbr:Outlook.com ?
+309,"select distinct ?uri where { dbr:Trinity_School,_Brentwood dbo:localAuthority ?uri . dbr:Buckhurst_Hill_County_High_School dbo:localAuthority ?uri . }","what is the dbo:localAuthority of the dbr:Trinity_School,_Brentwood and dbr:Buckhurst_Hill_County_High_School ?"
+310,select distinct ?uri where { dbr:Jo_Garcia dbo:knownFor ?uri . dbr:Merritt_Cabal dbo:knownFor ?uri . },what is the dbo:knownFor of the dbr:Jo_Garcia and dbr:Merritt_Cabal ?
+311,select distinct count ( ?uri ) where { ?x dbp:placeOfDeath dbr:Connecticut_Colony . ?x dbo:restingPlace ?uri . ?uri rdf:type dbo:Place },give the total number of dbo:restingPlace of the politicians whose dbp:placeOfDeath is dbr:Connecticut_Colony ?
+312,select distinct ?uri where { dbr:Elie_Wiesel dbp:awards ?uri },what are the dbp:awards of dbr:Elie_Wiesel ?
+313,select distinct ?uri where { ?x dbo:bronzeMedalist dbr:Yang_Yilin . ?x dbo:silverMedalist ?uri . },what is the dbo:silverMedalist of the owl whose dbo:bronzeMedalist is dbr:Yang_Yilin ?
+314,select distinct count ( ?uri ) where { ?x dbp:battles dbr:Morocco . ?x dbp:battles ?uri },how many other dbp:battles are there of the military people whose dbp:battles is dbr:Morocco ?
+315,select distinct count ( ?uri ) where { dbr:Russell_T_Davies dbo:notableWork ?uri . },count the dbo:notableWork in dbr:Russell_T_Davies ?
+316,ask where { dbr:Million_Dollar_Traders dbo:narrator dbr:Andrew_Lincoln },is dbr:Andrew_Lincoln the dbo:narrator of dbr:Million_Dollar_Traders ?
+317,select distinct ?uri where { ?x dbo:keyPerson dbr:Deborah_Turness . ?uri dbo:network ?x . },what are the television shows whose dbo:network 's dbo:keyPerson is dbr:Deborah_Turness ?
+318,select distinct count ( ?uri ) where { ?x dbp:chairman dbr:Merritt_Paulson . ?x dbo:homeStadium ?uri . },"how many dbo:homeStadium are there , of the soccer club seasons whose dbp:chairman is dbr:Merritt_Paulson ?"
+319,select distinct ?uri where { ?uri dbp:company dbr:Limited_liability_company . ?uri rdf:type dbo:Magazine },what are the dbo:Magazine whose dbp:company is dbr:Limited_liability_company ?
+320,select distinct ?uri where { dbr:John_A._Danaher_III dbp:office ?uri },what are the dbp:office of dbr:John_A._Danaher_III ?
+321,"select distinct ?uri where { dbr:Live_in_Detroit,_MI dbo:recordedIn ?uri }","what is the dbo:recordedIn of dbr:Live_in_Detroit,_MI ?"
+322,"select distinct ?uri where { ?uri dbp:highSchool dbr:West_Sacramento,_California . ?uri rdf:type dbo:AmericanFootballPlayer }","who is the dbo:AmericanFootballPlayer whose dbp:highSchool is dbr:West_Sacramento,_California ?"
+323,select distinct ?uri where { dbr:Philippine_Ports_Authority dbo:successor ?uri . dbr:Ruben_J._Villote dbo:stateOfOrigin ?uri },what is the dbo:successor of the dbr:Philippine_Ports_Authority and dbo:stateOfOrigin of the dbr:Ruben_J._Villote ?
+324,select distinct ?uri where { ?uri dbo:owner dbr:Mark_Davis_(American_football) . ?uri dbo:locationCity dbr:O.co_Coliseum . ?uri rdf:type dbo:AmericanFootballTeam },what is the dbo:AmericanFootballTeam whose dbo:owner is dbr:Mark_Davis_(American_football) and dbo:locationCity is dbr:O.co_Coliseum ?
+325,select distinct ?uri where { dbr:Michael_Jeffery dbp:primeminister ?uri . dbr:William_Deane dbo:primeMinister ?uri },what is the dbp:primeminister of the dbr:Michael_Jeffery and dbo:primeMinister of the dbr:William_Deane ?
+326,select distinct ?uri where { ?x dbo:family dbr:Balanidae . ?x dbo:binomialAuthority ?uri . ?x rdf:type dbo:Crustacean },what is the dbo:binomialAuthority of the dbo:Crustacean whose dbo:family is dbr:Balanidae ?
+327,select distinct ?uri where { ?uri dbo:family dbr:Ape . },what are the mammals whose dbo:family is dbr:Ape ?
+328,select distinct ?uri where { dbr:Roberto_Clemente_Bridge dbo:municipality ?uri },what is the dbo:municipality of dbr:Roberto_Clemente_Bridge ?
+329,select distinct ?uri where { dbr:Russell_T_Davies dbo:notableWork ?uri },what are the dbo:notableWork of dbr:Russell_T_Davies ?
+330,select distinct ?uri where { ?x dbo:product dbr:United_States_dollar . ?x dbo:product ?uri . },what are the other dbo:product of the companies whose dbo:product is dbr:United_States_dollar ?
+331,select distinct ?uri where { ?uri dbo:formerTeam dbr:Carolina_Panthers . ?uri dbo:formerTeam dbr:Indianapolis_Colts . },what are the american football players whose dbo:formerTeam are dbr:Carolina_Panthers and dbr:Indianapolis_Colts ?
+332,select distinct ?uri where { dbr:Kenny_Dies dbo:musicComposer ?uri },who is the dbo:musicComposer of dbr:Kenny_Dies ?
+333,select distinct ?uri where { ?x dbp:predecessor dbr:Marco_Aurelio_Robles . ?x dbp:placeOfDeath ?uri . ?x rdf:type dbo:OfficeHolder },what is the dbp:placeOfDeath of the dbo:OfficeHolder whose dbp:predecessor is dbr:Marco_Aurelio_Robles ?
+334,ask where { dbr:Hyundai_Lavita dbo:assembly dbr:Kulim },is dbr:Kulim the dbo:assembly of dbr:Hyundai_Lavita ?
+335,select distinct ?uri where { dbr:Bream_Bay dbp:founder ?uri },who is the dbp:founder of dbr:Bream_Bay ?
+336,select distinct count ( ?uri ) where { ?x dbp:battles dbr:SFOR . ?x dbo:battle ?uri . },what is the total number of dbo:battle of the military people whose dbp:battles is dbr:SFOR ?
+337,select distinct ?uri where { dbr:Denver_Broncos dbo:locationCity ?uri },what is the dbo:locationCity of dbr:Denver_Broncos ?
+338,"select distinct ?uri where { dbr:Hudson_Highlands_State_Park dbp:river ?uri . dbr:Troy,_New_York dbo:river ?uri }","what is the dbp:river of the dbr:Hudson_Highlands_State_Park and dbp:river of the dbr:Troy,_New_York ?"
+339,select distinct count ( ?uri ) where { ?uri dbp:director dbr:Orson_Welles . ?uri rdf:type dbo:Film },how many dbo:Film are there whose dbp:director is dbr:Orson_Welles ?
+340,ask where { dbr:Mauritius dbp:governmentType dbr:Parliamentary_republic },is dbr:Parliamentary_republic the dbp:governmentType of dbr:Mauritius ?
+341,select distinct ?uri where { dbr:Ludovic_Boi dbo:birthPlace ?uri . dbr:Fernando_Augustin dbp:residence ?uri . },what is the dbo:birthPlace of the dbr:Ludovic_Boi and dbp:residence of the dbr:Fernando_Augustin ?
+342,select distinct ?uri where { ?x dbp:residence dbr:Prime_Minister's_House_(Colombo) . ?uri dbo:leader ?x . ?uri rdf:type dbo:PoliticalParty },what are the dbo:PoliticalParty whose dbo:leader 's dbp:residence is dbr:Prime_Minister's_House_(Colombo) ?
+343,select distinct count ( ?uri ) where { ?x dbo:executiveProducer dbr:Ricky_Gervais . ?uri dbo:series ?x . ?uri rdf:type dbo:FictionalCharacter },how many dbo:FictionalCharacter whose dbo:series 's dbo:executiveProducer is dbr:Ricky_Gervais are there ?
+344,select distinct count ( ?uri ) where { ?x dbp:design dbr:Cable-stayed_bridge . ?x dbp:crosses ?uri . },count the number of dbp:crosses of the bridges whose dbp:design is dbr:Cable-stayed_bridge ?
+345,select distinct ?uri where { ?uri dbp:themeMusicComposer dbr:Ron_Grainer . ?uri rdf:type dbo:TelevisionShow },what are the dbo:TelevisionShow whose dbp:themeMusicComposer is dbr:Ron_Grainer ?
+346,select distinct ?uri where { ?uri dbo:leaderName dbr:Raymond_Johansen . },what is the settlement whose dbo:leaderName is dbr:Raymond_Johansen ?
+347,select distinct ?uri where { ?x dbp:position dbr:Defenceman . ?x dbo:team ?uri . },what is the dbo:team of the ice hockey players whose dbp:position is dbr:Defenceman ?
+348,select distinct ?uri where { ?uri dbp:knownFor dbr:Manhattan_Project . ?uri rdf:type dbo:Scientist },who are the dbo:Scientist whose dbp:knownFor is dbr:Manhattan_Project ?
+349,select distinct ?uri where { ?x dbp:constituency dbr:Jadavpur_(Lok_Sabha_constituency) . ?x dbp:religion ?uri . ?x rdf:type dbo:Person },what is the dbp:religion of the dbo:Person whose dbp:constituency is dbr:Jadavpur_(Lok_Sabha_constituency) ?
+350,select distinct ?uri where { dbr:Clinton_Foundation dbp:keyPeople ?uri . dbr:Jim_Sasser dbo:president ?uri },what is the dbp:keyPeople of the dbr:Clinton_Foundation and dbo:president of the dbr:Jim_Sasser ?
+351,select distinct ?uri where { ?uri dbp:employer dbr:Open_Society_Foundations . ?uri dbp:spouse dbr:Susan_Weber_Soros . ?uri rdf:type dbo:Person },who is the dbo:Person whose dbp:employer is dbr:Open_Society_Foundations and dbp:spouse is dbr:Susan_Weber_Soros ?
+352,select distinct ?uri where { ?uri dbp:creator dbr:Josh_Friedman . ?uri dbo:portrayer dbr:Terminator_3:_Rise_of_the_Machines . ?uri rdf:type dbo:FictionalCharacter },what is the dbo:FictionalCharacter whose dbp:creator is dbr:Josh_Friedman and dbo:portrayer is dbr:Terminator_3:_Rise_of_the_Machines ?
+353,select distinct ?uri where { dbr:French_Southern_and_Antarctic_Lands dbo:currency ?uri . dbr:Kerguelen_Islands dbo:currency ?uri . },what is the dbo:currency of the dbr:French_Southern_and_Antarctic_Lands and dbr:Kerguelen_Islands ?
+354,"select distinct ?uri where { dbr:United_States_House_of_Representatives_elections,_1788_and_1789 dbp:leader ?uri . dbr:John_Drayton dbp:appointer ?uri }","what is the dbp:leader of the dbr:United_States_House_of_Representatives_elections,_1788_and_1789 and dbp:appointer of the dbr:John_Drayton ?"
+355,select distinct ?uri where { ?uri dbo:award dbr:Royal_Society . ?uri rdf:type dbo:Scientist },what dbo:Scientist 's dbo:award is dbr:Royal_Society ?
+356,select distinct ?uri where { dbr:James_H._Fields dbp:placeofburial ?uri },what is the dbp:placeofburial of dbr:James_H._Fields ?
+357,select distinct ?uri where { dbr:Battle_of_Brownstown dbo:commander ?uri },what is the dbo:commander of dbr:Battle_of_Brownstown ?
+358,select distinct ?uri where { dbr:Jon_Speelman dbo:field ?uri },what is the dbo:field of dbr:Jon_Speelman ?
+359,select distinct ?uri where { dbr:Google_Web_Toolkit dbo:author ?uri . dbr:PlayN dbo:author ?uri . },what is the dbo:author of the dbr:Google_Web_Toolkit and dbr:PlayN ?
+360,select distinct ?uri where { ?x dbo:automobilePlatform dbr:Dodge . ?x dbo:automobilePlatform ?uri . ?x rdf:type dbo:Automobile },what are the other dbo:automobilePlatform of the dbo:Automobile whose dbo:automobilePlatform is dbr:Dodge ?
+361,select distinct ?uri where { ?x dbp:prizes dbr:National_Medal_of_Science . ?x dbp:doctoralStudents ?uri . ?x rdf:type dbo:Scientist },what is the dbp:doctoralStudents of the dbo:Scientist whose dbp:prizes is dbr:National_Medal_of_Science ?
+362,"select distinct ?uri where { dbr:Ne_daj_se,_Nina dbp:firstAired ?uri }","what are the dbp:firstAired of dbr:Ne_daj_se,_Nina ?"
+363,ask where { dbr:Stanislav_Morozov dbo:formerCoach dbr:Nikolai_Morozov_(figure_skater) },is dbr:Nikolai_Morozov_(figure_skater) the dbo:formerCoach of dbr:Stanislav_Morozov ?
+364,select distinct ?uri where { dbr:2013–14_Panionios_G.S.S._season dbo:ground ?uri },what is the dbo:ground of dbr:2013–14_Panionios_G.S.S._season ?
+365,ask where { dbr:Timothy_Morton dbp:mainInterests dbr:Buddhism },is dbr:Buddhism the dbp:mainInterests of dbr:Timothy_Morton ?
+366,select distinct ?uri where { ?x dbo:keyPerson dbr:Kevin_Tsujihara . ?uri dbp:distributor ?x . ?uri rdf:type dbo:Film },what are the dbo:Film whose dbp:distributor 's dbo:keyPerson is dbr:Kevin_Tsujihara ?
+367,select distinct ?uri where { ?x dbo:child dbr:Stevens_T._Mason . ?x dbo:deathCause ?uri . },what is the dbo:deathCause of the owl whose dbo:child is dbr:Stevens_T._Mason ?
+368,select distinct ?uri where { ?uri dbp:successor dbr:BMW_M40 . ?uri rdf:type dbo:AutomobileEngine },what dbo:AutomobileEngine 's dbp:successor is dbr:BMW_M40 ?
+369,select distinct ?uri where { dbr:Methodist_Central_Hall_Westminster dbo:district ?uri },what is the dbo:district of dbr:Methodist_Central_Hall_Westminster ?
+370,select distinct ?uri where { dbr:Ladonia_(micronation) dbo:officialLanguage ?uri . dbr:Probus_(journal) dbo:academicDiscipline ?uri },what is the dbo:officialLanguage of the dbr:Ladonia_(micronation) and dbo:academicDiscipline of the dbr:Probus_(journal) ?
+371,"select distinct ?uri where { ?x dbo:almaMater dbr:Worcester_College,_Oxford . ?x dbp:draftTeam ?uri . ?x rdf:type dbo:Person }","what is the dbp:draftTeam of the dbo:Person whose dbo:almaMater is dbr:Worcester_College,_Oxford ?"
+372,select distinct ?uri where { ?x dbo:service dbr:Office_365 . ?x dbp:services ?uri . },what is the dbp:services of the companies whose dbo:service is dbr:Office_365 ?
+373,select distinct ?uri where { dbr:Nice_&_Smooth dbo:associatedBand ?uri . dbr:Same_Song_(Digital_Underground_song) dbp:writer ?uri . },who is the dbo:associatedBand of the dbr:Nice_&_Smooth and dbp:writer of the dbr:Same_Song_(Digital_Underground_song) ?
+374,select distinct ?uri where { ?x dbo:birthPlace dbr:Scotland . ?uri dbo:starring ?x . ?uri rdf:type dbo:Film },list the dbo:Film whose dbo:starring 's dbo:birthPlace is dbr:Scotland ?
+375,select distinct count ( ?uri ) where { ?x dbp:place dbr:New_York . ?x dbp:writer ?uri . },count the number of dbp:writer of the plays whose dbp:place is dbr:New_York ?
+376,select distinct ?uri where { dbr:Motorpsycho_Nitemare dbp:composer ?uri . dbr:Moondog_Matinee dbo:subsequentWork ?uri },who is the dbp:composer of the dbr:Motorpsycho_Nitemare and dbo:subsequentWork of the dbr:Moondog_Matinee ?
+377,select distinct ?uri where { ?x dbo:owningCompany dbr:Viacom_(original) . ?uri dbp:company ?x . ?uri rdf:type dbo:TelevisionShow },what are the dbo:TelevisionShow whose dbp:company 's dbo:owningCompany is dbr:Viacom_(original) ?
+378,select distinct ?uri where { ?x dbo:birthPlace dbr:Quebec . ?x dbo:formerTeam ?uri . ?x rdf:type dbo:IceHockeyPlayer },what is the dbo:formerTeam of the dbo:IceHockeyPlayer whose dbo:birthPlace is dbr:Quebec ?
+379,select distinct ?uri where { dbr:WBIG-FM dbo:programmeFormat ?uri },what is the dbo:programmeFormat of dbr:WBIG-FM ?
+380,"select distinct ?uri where { ?x dbp:almaMater dbr:Worcester_College,_Oxford . ?x dbo:field ?uri . }","what is the dbo:field of the scientists whose dbp:almaMater is dbr:Worcester_College,_Oxford ?"
+381,select distinct ?uri where { ?uri dbp:deathPlace dbr:Petersen_House . ?uri rdf:type dbo:Person },who is the dbo:Person whose dbp:deathPlace is dbr:Petersen_House ?
+382,select distinct ?uri where { dbr:Saima_Chowdhury dbo:citizenship ?uri },what is the dbo:citizenship of dbr:Saima_Chowdhury ?
+383,select distinct ?uri where { dbr:Ralph_Flanders dbp:occupation ?uri . dbr:Claiborne_Pell dbo:profession ?uri },what is the dbp:occupation of the dbr:Ralph_Flanders and dbo:profession of the dbr:Claiborne_Pell ?
+384,ask where { dbr:Monroe_station_(CTA_Blue_Line) dbp:owned dbr:Chicago },is dbr:Chicago the dbp:owned of dbr:Monroe_station_(CTA_Blue_Line) ?
+385,select distinct ?uri where { ?x dbo:spouse dbr:Ellen_Lundström . ?x dbp:awards ?uri . },what is the dbp:awards of the people whose dbo:spouse is dbr:Ellen_Lundström ?
+386,select distinct ?uri where { dbr:Republican_River dbo:leftTributary ?x . ?x dbo:state ?uri . },what is the dbo:state of the river which is the dbo:leftTributary of dbr:Republican_River ?
+387,select distinct count ( ?uri ) where { ?x dbo:militaryBranch dbr:Republic_of_Korea_Army . ?x dbo:religion ?uri . },give the total number of dbo:religion of the presidents whose dbo:militaryBranch is dbr:Republic_of_Korea_Army ?
+388,select distinct count ( ?uri ) where { ?x dbp:label dbr:Sony_Music_Entertainment . ?uri dbp:music ?x . ?uri rdf:type dbo:MusicalWork },what is the total number of dbo:MusicalWork whose dbp:music 's dbp:label is dbr:Sony_Music_Entertainment ?
+389,select distinct ?uri where { ?uri dbo:director dbr:Stanley_Kubrick . ?uri dbp:editing dbr:Anthony_Harvey . ?uri rdf:type dbo:Film },what is the dbo:Film whose dbo:director is dbr:Stanley_Kubrick and dbp:editing is dbr:Anthony_Harvey ?
+390,"select distinct ?uri where { ?uri dbp:placeofburial dbr:St_Mary's_Church,_Battersea . ?uri rdf:type dbo:MilitaryPerson }","who is the dbo:MilitaryPerson whose dbp:placeofburial is dbr:St_Mary's_Church,_Battersea ?"
+391,select distinct ?uri where { ?x dbp:products dbr:Remote_Desktop_Protocol . ?x dbo:product ?uri . ?x rdf:type dbo:Company },what is the dbo:product of the dbo:Company whose dbp:products is dbr:Remote_Desktop_Protocol ?
+392,select distinct ?uri where { dbr:On_Broadway_(Smash) dbp:guests ?uri },who are the dbp:guests of dbr:On_Broadway_(Smash) ?
+393,ask where { dbr:The_Times_They_Are_a-Changin'_(musical) dbp:lyrics dbr:Bob_Dylan },is dbr:Bob_Dylan the dbp:lyrics of dbr:The_Times_They_Are_a-Changin'_(musical) ?
+394,"select distinct ?uri where { ?x dbo:militaryRank dbr:Judge_Advocate_General's_Corps,_United_States_Army . ?x dbo:almaMater ?uri . }","what is the dbo:almaMater of the judges whose dbo:militaryRank is dbr:Judge_Advocate_General's_Corps,_United_States_Army ?"
+395,select distinct ?uri where { dbr:The_Ultimate_Merger dbo:executiveProducer ?uri . dbr:Trump_Productions dbo:keyPerson ?uri . },who is the dbo:executiveProducer of the dbr:The_Ultimate_Merger and dbo:keyPerson of the dbr:Trump_Productions ?
+396,select distinct count ( ?uri ) where { ?x dbp:style dbr:Burr_Truss . ?x dbo:state ?uri . ?uri rdf:type dbo:Region },"how many dbo:state are there , of the bridges whose dbp:style is dbr:Burr_Truss ?"
+397,"select distinct ?uri where { dbr:John_Tyler,_Sr. dbo:child ?uri }","who is the dbo:child of dbr:John_Tyler,_Sr. ?"
+398,select distinct ?uri where { dbr:Latvian_Wikipedia dbo:owner ?uri . dbr:Wiktionary dbo:owner ?uri . },what is the dbo:owner of the dbr:Latvian_Wikipedia and dbr:Wiktionary ?
+399,select distinct ?uri where { ?uri dbp:placeOfBurial dbr:Mausoleum_of_Augustus },what royalties 's dbp:placeOfBurial is dbr:Mausoleum_of_Augustus ?
+400,select distinct ?uri where { dbr:Chiva_bus dbo:automobilePlatform ?uri },what is the dbo:automobilePlatform of dbr:Chiva_bus ?
+401,select distinct count ( ?uri ) where { ?x dbo:birthPlace dbr:United_States . ?uri dbp:screenplay ?x . ?uri rdf:type dbo:Film },what is the total number of dbo:Film whose dbp:screenplay 's dbo:birthPlace is dbr:United_States ?
+402,select distinct ?uri where { dbr:Nord_(video_game) dbo:computingPlatform ?uri . dbr:The_Beauty_Inside dbo:distributor ?uri . },what is the dbo:computingPlatform of the dbr:Nord_(video_game) and dbo:distributor of the dbr:The_Beauty_Inside ?
+403,ask where { dbr:Geneva dbp:neighboringMunicipalities dbr:Cologny },is dbr:Cologny the dbp:neighboringMunicipalities of dbr:Geneva ?
+404,select distinct ?uri where { ?uri dbo:related dbr:The_Sarah_Jane_Adventures . ?uri dbp:themeMusicComposer dbr:Ron_Grainer . ?uri rdf:type dbo:TelevisionShow },what is the dbo:TelevisionShow whose dbo:related is dbr:The_Sarah_Jane_Adventures and dbp:themeMusicComposer is dbr:Ron_Grainer ?
+405,"select distinct ?uri where { ?uri dbo:majorShrine dbr:Emmitsburg,_Maryland . ?uri dbo:majorShrine dbr:Shrine_of_St._Elizabeth_Ann_Bayley_Seton . }","what is the saint whose dbo:majorShrine are dbr:Emmitsburg,_Maryland and dbr:Shrine_of_St._Elizabeth_Ann_Bayley_Seton ?"
+406,select distinct ?uri where { dbr:Pierre_R._Graham dbp:branch ?uri . dbr:Edwin_F._Hunter dbp:branch ?uri . },what is the dbp:branch of the dbr:Pierre_R._Graham and dbr:Edwin_F._Hunter ?
+407,ask where { dbr:Raymond_Picard dbp:birthplace dbr:Paris },is dbr:Paris the dbp:birthplace of dbr:Raymond_Picard ?
+408,ask where { dbr:1999–2000_Watford_F.C._season dbo:chairman dbr:Elton_John },is dbr:Elton_John the dbo:chairman of dbr:1999–2000_Watford_F.C._season ?
+409,select distinct ?uri where { dbr:Tessa_Dahl dbo:parent ?uri },who is the dbo:parent of dbr:Tessa_Dahl ?
+410,select distinct count ( ?uri ) where { ?x dbo:knownFor dbr:Linguistics . ?x dbo:knownFor ?uri },give me the count of dbo:knownFor of the people whose dbo:knownFor is dbr:Linguistics ?
+411,ask where { dbr:Metallica dbp:pastMembers dbr:Cliff_Burton },is dbr:Cliff_Burton the dbp:pastMembers of dbr:Metallica ?
+412,select distinct ?uri where { ?x dbo:birthPlace dbr:New_York_City . ?x dbo:knownFor ?uri . },what is the dbo:knownFor of the people whose dbo:birthPlace is dbr:New_York_City ?
+413,select distinct ?uri where { ?uri dbo:source dbr:Cowombat_Flat . ?uri dbo:riverMouth dbr:Murray_Mouth . ?uri rdf:type dbo:River },what is the dbo:River whose dbo:source is dbr:Cowombat_Flat and dbo:riverMouth is dbr:Murray_Mouth ?
+414,select distinct ?uri where { dbr:Ancient_Rome dbo:governmentType ?uri },what is the dbo:governmentType of dbr:Ancient_Rome ?
+415,select distinct ?uri where { ?x dbo:parentOrganisation dbr:Fox_Sports_(United_States) . ?uri dbo:channel ?x . ?uri rdf:type dbo:TelevisionShow },what is the dbo:TelevisionShow whose dbo:channel 's dbo:parentOrganisation is dbr:Fox_Sports_(United_States) ?
+416,select distinct ?uri where { ?x dbo:manager dbr:Caio_Zanardi . ?x dbo:ground ?uri . ?x rdf:type dbo:SoccerClubSeason },what is the dbo:ground of the dbo:SoccerClubSeason whose dbo:manager is dbr:Caio_Zanardi ?
+417,select distinct ?uri where { ?uri dbp:pastMembers dbr:Kevin_Jonas . ?uri dbp:pastMembers dbr:Joe_Jonas . ?uri rdf:type dbo:Band },what is the dbo:Band whose dbp:pastMembers are dbr:Kevin_Jonas and dbr:Joe_Jonas ?
+418,select distinct count ( ?uri ) where { ?uri dbo:species dbr:Human . ?uri rdf:type dbo:FictionalCharacter },how many dbo:FictionalCharacter are there whose dbo:species is dbr:Human ?
+419,select distinct count ( ?uri ) where { ?x dbp:headquarters dbr:New_York . ?uri dbp:network ?x . ?uri rdf:type dbo:TelevisionShow },how many dbo:TelevisionShow are there whose dbp:network 's dbp:headquarters is dbr:New_York ?
+420,select distinct ?uri where { ?uri dbo:network dbr:BBC_One . ?uri dbo:network dbr:BBC_HD . ?uri rdf:type dbo:TelevisionShow },whose dbo:network are dbr:BBC_One and dbr:BBC_HD ?
+421,select distinct ?uri where { dbr:Chicken_Run dbp:director ?x . ?x dbo:award ?uri . },what is the dbo:award of the writer who is the dbp:director of dbr:Chicken_Run ?
+422,select distinct ?uri where { dbr:Lake_Uniamési dbo:outflow ?uri },what are the dbo:outflow of dbr:Lake_Uniamési ?
+423,ask where { dbr:Army_Group_Oberrhein_(Germany) dbp:notableCommanders dbr:Heinrich_Himmler },is dbr:Heinrich_Himmler the dbp:notableCommanders of dbr:Army_Group_Oberrhein_(Germany) ?
+424,select distinct ?uri where { dbr:Linda_Jenness dbo:incumbent ?uri },who is the dbo:incumbent of dbr:Linda_Jenness ?
+425,select distinct ?uri where { ?uri dbo:foundedBy dbr:Fusajiro_Yamauchi . ?uri dbp:services dbr:Nintendo_eShop . ?uri rdf:type dbo:Company },what is the dbo:Company whose dbo:foundedBy is dbr:Fusajiro_Yamauchi and dbp:services is dbr:Nintendo_eShop ?
+426,select distinct ?uri where { ?uri dbo:largestCity dbr:Tirana . ?uri rdf:type dbo:Country },what is the dbo:Country whose dbo:largestCity is dbr:Tirana ?
+427,select distinct ?uri where { dbr:Sigma_TV dbp:headquarters ?uri },what is the dbp:headquarters of dbr:Sigma_TV ?
+428,select distinct ?uri where { dbr:Juno_I dbo:launchSite ?uri . dbr:2016_Fort_Lauderdale_Strikers_season dbo:ground ?uri },what is the dbo:launchSite of the dbr:Juno_I and dbo:ground of the dbr:2016_Fort_Lauderdale_Strikers_season ?
+429,select distinct count ( ?uri ) where { dbr:International_Union_of_Anarchists dbp:affiliation ?uri . },count the dbp:affiliation in dbr:International_Union_of_Anarchists ?
+430,"select distinct ?uri where { ?uri dbp:residence dbr:Wilton,_Connecticut }","what people 's dbp:residence is dbr:Wilton,_Connecticut ?"
+431,select distinct count ( ?uri ) where { dbr:North_Sea dbp:inflow ?uri . },how many dbp:inflow are there in dbr:North_Sea ?
+432,select distinct ?uri where { ?x dbp:publisher dbr:Bantam_Spectra . ?x dbo:series ?uri . },what is the dbo:series of the books whose dbp:publisher is dbr:Bantam_Spectra ?
+433,select distinct ?uri where { dbr:Graham_Richardson dbo:primeMinister ?uri . dbr:Bob_McMullan dbo:primeMinister ?uri . },what is the dbo:primeMinister of the dbr:Graham_Richardson and dbr:Bob_McMullan ?
+434,select distinct ?uri where { dbr:Charlie_Justice_(American_football_player) dbp:pastteams ?uri . dbr:Bobby_Hoppe dbp:pastteams ?uri . },what is the dbp:pastteams of the dbr:Charlie_Justice_(American_football_player) and dbr:Bobby_Hoppe ?
+435,"select distinct ?uri where { dbr:Indian_general_election,_2004_(Delhi) dbo:affiliation ?uri . dbr:Indian_general_election,_2004_(Andhra_Pradesh) dbo:affiliation ?uri . }","what is the dbo:affiliation of the dbr:Indian_general_election,_2004_(Delhi) and dbr:Indian_general_election,_2004_(Andhra_Pradesh) ?"
+436,select distinct ?uri where { ?uri dbo:leader dbr:Willem-Alexander_of_the_Netherlands . ?uri dbo:leader dbr:Fredis_Refunjol . },whose dbo:leader are dbr:Willem-Alexander_of_the_Netherlands and dbr:Fredis_Refunjol ?
+437,"select distinct ?uri where { ?uri dbp:sourceRegion dbr:North-Western_Province,_Zambia . ?uri dbo:riverMouth dbr:Indian_Ocean . ?uri rdf:type dbo:River }","what is the dbo:River whose dbp:sourceRegion is dbr:North-Western_Province,_Zambia and dbo:riverMouth is dbr:Indian_Ocean ?"
+438,select distinct ?uri where { ?uri dbp:screenplay dbr:Akiva_Goldsman . ?uri dbo:director dbr:Joel_Schumacher . ?uri rdf:type dbo:Film },what is the dbo:Film whose dbp:screenplay is dbr:Akiva_Goldsman and dbo:director is dbr:Joel_Schumacher ?
+439,select distinct ?uri where { dbr:Jamiatu_Muslim_Mindanao dbp:athletics ?uri },what are the dbp:athletics of dbr:Jamiatu_Muslim_Mindanao ?
+440,ask where { dbr:Greasy_Pop_Records dbo:distributingLabel dbr:Festival_Records },is dbr:Festival_Records the dbo:distributingLabel of dbr:Greasy_Pop_Records ?
+441,select distinct ?uri where { dbr:Nihoa dbp:nearestCity ?uri },what is the dbp:nearestCity of dbr:Nihoa ?
+442,select distinct ?uri where { dbr:New_Sanno_Hotel dbp:operator ?uri . dbr:Naval_Air_Facility_Adak dbp:owner ?uri },what is the dbp:operator of the dbr:New_Sanno_Hotel and dbp:owner of the dbr:Naval_Air_Facility_Adak ?
+443,select distinct ?uri where { dbr:John_Kotelawala dbp:allegiance ?uri . dbr:Sanath_Weerakoon dbo:country ?uri },what is the dbp:allegiance of the dbr:John_Kotelawala and dbo:country of the dbr:Sanath_Weerakoon ?
+444,select distinct ?uri where { ?uri dbp:nationalAnthem dbr:God_Defend_New_Zealand },what is the country whose dbp:nationalAnthem is dbr:God_Defend_New_Zealand ?
+445,"select distinct ?uri where { dbr:Kumta dbp:governmentType ?uri . dbr:Indian_general_election,_2004_(Andhra_Pradesh) dbo:affiliation ?uri }","what is the dbp:governmentType of the dbr:Kumta and dbo:affiliation of the dbr:Indian_general_election,_2004_(Andhra_Pradesh) ?"
+446,select distinct ?uri where { ?x dbp:predecessor dbr:Iyasu_II . ?x dbp:placeOfBurial ?uri . ?x rdf:type dbo:Monarch },what is the dbp:placeOfBurial of the dbo:Monarch whose dbp:predecessor is dbr:Iyasu_II ?
+447,select distinct ?uri where { dbr:Meadow_Soprano dbo:relative ?x . ?x dbo:religion ?uri . },what is the dbo:religion of the fictional character who is the dbo:relative of dbr:Meadow_Soprano ?
+448,select distinct ?uri where { dbr:Aishath_Saffa dbp:nationality ?uri },what is the dbp:nationality of dbr:Aishath_Saffa ?
+449,select distinct ?uri where { dbr:My_Favorite_Girl_(Dave_Hollister_song) dbp:artist ?x . ?x dbo:associatedBand ?uri . },what is the dbo:associatedBand of the musical artist who is the dbp:artist of dbr:My_Favorite_Girl_(Dave_Hollister_song) ?
+450,select distinct ?uri where { dbr:Next_Thing dbo:recordLabel ?uri . dbr:GetTV dbo:parentOrganisation ?uri },what is the dbo:recordLabel of the dbr:Next_Thing and dbo:parentOrganisation of the dbr:GetTV ?
+451,select distinct ?uri where { dbr:North–South_Transport_Corridor dbo:routeEnd ?uri . dbr:Mumbai_Vadodara_Expressway dbo:routeEnd ?uri . },what is the dbo:routeEnd of the dbr:North–South_Transport_Corridor and dbr:Mumbai_Vadodara_Expressway ?
+452,select distinct ?uri where { ?uri dbp:headCoach dbr:Bill_Peters_(ice_hockey) . ?uri rdf:type dbo:HockeyTeam },what is the dbo:HockeyTeam whose dbp:headCoach is dbr:Bill_Peters_(ice_hockey) ?
+453,select distinct ?uri where { dbr:Wilfred_McDonald dbp:playedFor ?uri . dbr:Cam_Plante dbp:playedFor ?uri . },what is the dbp:playedFor of the dbr:Wilfred_McDonald and dbr:Cam_Plante ?
+454,select distinct ?uri where { ?uri dbp:judges dbr:Randy_Jackson . ?uri dbp:channel dbr:Fox_Broadcasting_Company . ?uri rdf:type dbo:TelevisionShow },what is the dbo:TelevisionShow whose dbp:judges is dbr:Randy_Jackson and dbp:channel is dbr:Fox_Broadcasting_Company ?
+455,select distinct ?uri where { dbr:Phil-Ellena dbo:city ?uri },what is the dbo:city of dbr:Phil-Ellena ?
+456,select distinct ?uri where { dbr:Northwest_Indian_War dbp:combatant ?uri . dbr:Linda_Hogan dbp:ethnicity ?uri },what is the dbp:combatant of the dbr:Northwest_Indian_War and dbp:ethnicity of the dbr:Linda_Hogan ?
+457,select distinct ?uri where { dbr:GetTV dbo:parentOrganisation ?uri },what is the dbo:parentOrganisation of dbr:GetTV ?
+458,select distinct ?uri where { dbr:Dave_Bing dbp:draftTeam ?uri . dbr:Ron_Reed dbp:draftTeam ?uri . },what is the dbp:draftTeam of the dbr:Dave_Bing and dbr:Ron_Reed ?
+459,"select distinct ?uri where { dbr:Live_in_Detroit,_MI dbo:recordedIn ?uri . dbr:Bodhin_Kjolhede dbp:placeOfBirth ?uri }","what is the dbo:recordedIn of the dbr:Live_in_Detroit,_MI and dbp:placeOfBirth of the dbr:Bodhin_Kjolhede ?"
+460,select distinct ?uri where { ?uri dbo:relation dbr:Anne_Spielberg . },who is the person whose dbo:relation is dbr:Anne_Spielberg ?
+461,select distinct ?uri where { dbr:Union_of_Cambodian_Democrats dbo:ideology ?uri },what is the dbo:ideology of dbr:Union_of_Cambodian_Democrats ?
+462,select distinct ?uri where { dbr:Henry_Clay dbp:order ?uri . dbr:William_Luther_Hill dbo:profession ?uri },what is the dbp:order of the dbr:Henry_Clay and dbo:profession of the dbr:William_Luther_Hill ?
+463,select distinct ?uri where { ?x dbo:related dbr:Micronesia . ?x dbo:religion ?uri . ?x rdf:type dbo:EthnicGroup },what is the dbo:religion of the dbo:EthnicGroup whose dbo:related is dbr:Micronesia ?
+464,select distinct ?uri where { dbr:Indy_PopCon dbp:venue ?uri . dbr:Louis_LeCocq dbp:placeOfDeath ?uri },what is the dbp:venue of the dbr:Indy_PopCon and dbp:placeOfDeath of the dbr:Louis_LeCocq ?
+465,ask where { dbr:South_Island dbo:largestCity dbr:Christchurch },is dbr:Christchurch the dbo:largestCity of dbr:South_Island ?
+466,select distinct ?uri where { ?uri dbo:mayor dbr:Giorgos_Kaminis },what is the administrative region whose dbo:mayor is dbr:Giorgos_Kaminis ?
+467,select distinct count ( ?uri ) where { ?x dbp:creators dbr:Frank_Miller_(comics) . ?x dbp:characterName ?uri . },"how many dbp:characterName are there , of the comics characters whose dbp:creators is dbr:Frank_Miller_(comics) ?"
+468,select distinct ?uri where { dbr:Spain..._on_the_Road_Again dbo:narrator ?x . ?x dbp:birthPlace ?uri . },what is the dbp:birthPlace of the chef who is the dbo:narrator of dbr:Spain..._on_the_Road_Again ?
+469,select distinct ?uri where { ?uri dbp:narrator dbr:Trevor_Peacock . ?uri dbp:music dbr:Christophe_Beck . ?uri rdf:type dbo:Film },what is the dbo:Film whose dbp:narrator is dbr:Trevor_Peacock and dbp:music is dbr:Christophe_Beck ?
+470,select distinct ?uri where { ?x dbp:type dbr:Quick_bread . ?x dbo:region ?uri . },what is the dbo:region of the foods which are quick bread ?
+471,select distinct ?uri where { ?uri dbo:sourcePlace dbr:Australian_Alps . ?uri rdf:type dbo:River },what is the dbo:River whose dbo:sourcePlace is dbr:Australian_Alps ?
+472,select distinct ?uri where { dbr:San_Diego_Comic-Con_International dbp:venue ?uri },what is the dbp:venue of dbr:San_Diego_Comic-Con_International ?
+473,select distinct ?uri where { ?uri dbp:occupation dbr:House_of_Representatives_of_the_Philippines },what boxer 's dbp:occupation is dbr:House_of_Representatives_of_the_Philippines ?
+474,"select distinct ?uri where { ?x dbo:location dbr:Rosemont,_Illinois . ?x dbp:genre ?uri . ?x rdf:type dbo:Convention }","what is the dbp:genre of the dbo:Convention whose dbo:location is dbr:Rosemont,_Illinois ?"
+475,select distinct ?uri where { dbr:Winston_Bryant dbp:governor ?uri . dbr:Joseph_Stiglitz dbp:president ?uri },what is the dbp:governor of the dbr:Winston_Bryant and dbp:president of the dbr:Joseph_Stiglitz ?
+476,select distinct ?uri where { ?x dbp:writer dbr:Robert_Schenkkan . ?x dbp:place ?uri . ?x rdf:type dbo:Play },what is the dbp:place of the dbo:Play whose dbp:writer is dbr:Robert_Schenkkan ?
+477,select distinct ?uri where { ?uri dbp:battles dbr:World_War_I . },who are the military people whose dbp:battles is dbr:World_War_I ?
+478,select distinct ?uri where { dbr:New_Sanno_Hotel dbp:operator ?uri . dbr:Oahu_Railway_and_Land_Company dbp:governingBody ?uri },what is the dbp:operator of the dbr:New_Sanno_Hotel and dbp:governingBody of the dbr:Oahu_Railway_and_Land_Company ?
+479,select distinct ?uri where { dbr:Chevrolet_Caprice dbo:predecessor ?uri },what are the dbo:predecessor of dbr:Chevrolet_Caprice ?
+480,select distinct ?uri where { dbr:Blade_Runner_2:_The_Edge_of_Human dbo:subsequentWork ?x . ?x dbo:series ?uri . ?x rdf:type dbo:Book },what is the dbo:series of the dbo:Book which is the dbo:subsequentWork of dbr:Blade_Runner_2:_The_Edge_of_Human ?
+481,ask where { dbr:Paris dbo:mayor dbr:Anne_Hidalgo },is dbr:Anne_Hidalgo the dbo:mayor of dbr:Paris ?
+482,ask where { dbr:Vadodara_Junction_railway_station dbo:owningOrganisation dbr:Ministry_of_Railways_(India) },is dbr:Ministry_of_Railways_(India) the dbo:owningOrganisation of dbr:Vadodara_Junction_railway_station ?
+483,select distinct ?uri where { ?x dbo:recordLabel dbr:ATO_Records . ?uri dbp:themeMusicComposer ?x . ?uri rdf:type dbo:TelevisionShow },what are the dbo:TelevisionShow whose dbp:themeMusicComposer 's dbo:recordLabel is dbr:ATO_Records ?
+484,select distinct ?uri where { ?x dbo:anthem dbr:La_Marseillaise . ?x dbo:currency ?uri . },what is the dbo:currency of the administrative regions whose dbo:anthem is dbr:La_Marseillaise ?
+485,ask where { dbr:Sovereign_Military_Order_of_Malta dbo:officialLanguage dbr:Latin },is dbr:Latin the dbo:officialLanguage of dbr:Sovereign_Military_Order_of_Malta ?
+486,select distinct ?uri where { ?uri dbp:debutteam dbr:Chicago_Bears . ?uri dbo:formerTeam dbr:1998_Baltimore_Ravens_season . ?uri rdf:type dbo:AmericanFootballPlayer },what is the dbo:AmericanFootballPlayer whose dbp:debutteam is dbr:Chicago_Bears and dbo:formerTeam is dbr:1998_Baltimore_Ravens_season ?
+487,ask where { dbr:Ford_Kansas_City_Assembly_Plant dbo:owningOrganisation dbr:Ford_Motor_Company },is dbr:Ford_Motor_Company the dbo:owningOrganisation of dbr:Ford_Kansas_City_Assembly_Plant ?
+488,select distinct ?uri where { dbr:Alton_Ochsner dbo:institution ?uri },what is the dbo:institution of dbr:Alton_Ochsner ?
+489,select distinct ?uri where { dbr:The_Adventures_of_Tom_Sawyer dbo:coverArtist ?uri . dbr:Mark_Twain_Tonight dbp:writer ?uri },what is the dbo:coverArtist of the dbr:The_Adventures_of_Tom_Sawyer and dbp:writer of the dbr:Mark_Twain_Tonight ?
+490,select distinct ?uri where { ?x dbo:knownFor dbr:National_Geographic_(magazine) . ?x dbo:residence ?uri . ?x rdf:type dbo:Photographer },what is the dbo:residence of the dbo:Photographer whose dbo:knownFor is dbr:National_Geographic_(magazine) ?
+491,ask where { dbr:Tales_of_Suspense dbp:writers dbr:Stan_Lee },is dbr:Stan_Lee the dbp:writers of dbr:Tales_of_Suspense ?
+492,ask where { dbr:United_States_Navy dbp:commandStructure dbr:United_States_Department_of_Defense },is dbr:United_States_Department_of_Defense the dbp:commandStructure of dbr:United_States_Navy ?
+493,select distinct ?uri where { ?x dbp:mascot dbr:Penguin . ?x dbo:authority ?uri . ?x rdf:type dbo:School },what is the dbo:authority of the dbo:School whose dbp:mascot is dbr:Penguin ?
+494,"select distinct ?uri where { dbr:Jaime_Bateman_Cayón dbo:deathPlace ?uri . dbr:Hornito,_Chiriquí dbo:country ?uri . }","what is the dbo:deathPlace of the dbr:Jaime_Bateman_Cayón and dbo:country of the dbr:Hornito,_Chiriquí ?"
+495,select distinct ?uri where { dbr:Fazlur_Rahman_Khan dbo:restingPlace ?uri },what is the dbo:restingPlace of dbr:Fazlur_Rahman_Khan ?
+496,select distinct ?uri where { dbr:LoDaisKa_Site dbo:nearestCity ?uri },what is the dbo:nearestCity of dbr:LoDaisKa_Site ?
+497,select distinct ?uri where { dbr:Isa_(name) dbp:meaning ?uri },who is the dbp:meaning of dbr:Isa_(name) ?
+498,select distinct count ( ?uri ) where { ?x dbo:formerTeam dbr:American_Hockey_League . ?x dbo:formerTeam ?uri },what is the total number of other dbo:formerTeam of the ice hockey players whose dbo:formerTeam is dbr:American_Hockey_League ?
+499,select distinct ?uri where { ?x dbp:school dbr:Pietermaritzburg . ?x dbp:school ?uri . },what are the other dbp:school of the rugby players whose dbp:school is dbr:Pietermaritzburg ?

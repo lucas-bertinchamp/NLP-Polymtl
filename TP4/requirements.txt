@@ -1,0 +1,7 @@
+numpy
+matplotlib
+transformers
+sentencepiece
+torch
+re
+pandas
