@@ -33,3 +33,15 @@ Reproduction of the Transformer architecture using Keras layers.
 
 ## TP4
 
+In this project, we perform natural language question annotation using different models with the aim of proposing a method that outperforms competing teams.
+
+For example, given the question:
+What is the country for head of state of Justin Trudeau?
+The model should return :
+what is the <\<wd:Q6256\>> for <\<wdt:P35\>> of <\<wd:Q3099714\>>?
+
+Elements with the prefix wd are Wikidata URIs. For example wd:Q6256 corresponds to the URI https://www.wikidata.org/wiki/Q6256
+
+Wikidata is a collaborative, structured database that, like Wikipedia, is part of the Wikimedia project. Unlike Wikipedia, which focuses on the creation and management of encyclopedic content, Wikidata specializes in the collection and management of structured data.
+
+Fine-tuning LLMs such as BERT, ROBERTA, GPT...
